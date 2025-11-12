@@ -1,3 +1,29 @@
 body{
-    font-family:serif;
+    font-family: "Stack Sans Headline", sans-serif;
+}
+h1{
+    font-size: 4rem;
+    margin-block: 2rem;
+    line-height: 4rem;
+}
+.author-date {
+    font-size: 1.5rem;
+    margin-block-end: 3rem;
+}
+p {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 730px) {
+    body {
+        background-color: red;
+    }
+    p{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1800px) {
+    body {
+        background-color: white;
+    }
 }

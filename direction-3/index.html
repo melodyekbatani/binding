@@ -6,25 +6,6 @@
 	<link href="../common.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
-	<link href="https://api.fontshare.com/v2/css?f[]=array@401&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.typekit.net/ewi3mxs.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<meta charset="utf-8">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
-
 	</head>   
 	<body>
 		<div id="top-of-page">
@@ -37,12 +18,10 @@
 							<li><a href="#response">RESPONSE</a></li>
 						</ul>
 				</nav>
-			<!-- I know this is probably the wrong way to do this!!! Please help -->
-			<!-- Resolved!!-->
-			    <nav>
+                <nav>
                      <ol>
-						<li><a href="../index.html">Back to home</a></li>
-						<li><a href="../direction-1/index.html">Direction 1</a></li>
+                        <li><a href="../index.html">Back to home</a></li>
+                        <li><a href="../direction-1/index.html">Direction 1</a></li>
                         <li><a href="../direction-2/index.html">Direction 2</a></li>
                         <li><a href="../direction-3/index.html">Direction 3</a></li>
                      </ol>
@@ -55,11 +34,8 @@
 		<main>
 				<section class="intro">
 					<p class="author-date">Anthony Froshaugh, 
-						<!-- I also learnt about the time element on mdn and from the example! -->
-						<!-- also not sure about the punctuation/spacing and if it falls after the code elements and the cite element in general -->
 						<time datetime="1967">1967</time>
 					</p>
-						<!-- trying to add nav elements but struggling to figure out how to actually link them -->
 				</section>
 				<section class= "byline">
 					<aside>
@@ -83,7 +59,6 @@
 					<p> 
 						To mention both typographic, and, in the same breath/sentence, grids, is strictly tautologous. The word typography means to write/print using standard elements; to use standard elements implies some modular relationship between such elements; since such relationship is two-dimensional, it implies the determination of dimensions which are both horizontal and vertical. 
 					</p>
-					<!-- not entierely sure about superscript and if its the right tag to the footnote references here - check with Micheal and Rijk -->
 					<p>
 						Consider the problems which faced Gutenberg, some five hundred years ago, in helping <q>the eternal God to bring</q> into existence the laudable art, by which men now print books, and multiply them so greatly <sup>1</sup> Item, the said Johann Gutenberg knew of the invention of paper (which had reached Cologne by 1320); item, knew of the development of suitable inks of the general features of the cloth-and winepress, of the arts of the engravers, of the die-and punch-making of the goldsmiths (after all, he was a goldsmith himself).<sup>2</sup> What did Gutenberg invent?
 					</p>
@@ -91,32 +66,24 @@
 						In order that letters, characters, may be arranged in lines, line upon line, for printing, each letter must be of the same depth or body-size as its neighbours, irrespective of its individual width: the vertical dimension (y in Cartesian co-ordinates) is critical. If, as seems historically probable, Gutenberg's invention was that of the adjustable type-mould, tolerant of characters of differing widths, intolerant of divergence in body-size [1: overleaf], this invention acted as a vertical grid upon the setting, the form, the page. 
 					</p>
 				</section>
-				<!-- In case u (future me) is wondering, I dropped the last paragraph of this section to the next main section, it was being cut off half way in the original text -->
 				<section class="footnotes">
 					<p>
 						<sup>1</sup> <a href="https://digital.lib.umd.edu/result/id/d4c6f989-a766-4891-89ad-f64baa53e1f5?relpath=dc/2024/3"target="_blank"> Chronicle of Cologne</a> ,1499.
 					</p>
 					<p>
 						<sup>2</sup> <a href= "https://dn790007.ca.archive.org/0/items/historyofmechani00ushe/historyofmechani00ushe.pdf"target="_blank"> A.P.Usher, A history of mechanical inventions </a> , Cambridge Mass: Harvard University Press, 1954. Chapter 10 deals with <a href= "https://dn790007.ca.archive.org/0/items/historyofmechani00ushe/historyofmechani00ushe.pdf#page=286"target="_blank"> "The invention of printing";</a> however, Chapter 4 on <a href= "https://dn790007.ca.archive.org/0/items/historyofmechani00ushe/historyofmechani00ushe.pdf#page=82"target="_blank"> "The emergence of novelty in thought and action"</a> should not be missed.
-						<!-- okay so should the chapter names also be cite elements... overall confused about cite elements since this text is full of them -->
 					</p>
 				</section>
 
-				<section class="figures">
-				<!-- For this next part, might try CSS styling to create text on path and pair with a type writer looking font -->
-				<!-- Not sure if this is correct for german/latin/french languages -->
-				<!-- Mdn told me to put figcaption inside figure, I'm going to go with that... -->
-				<!-- Also I think the text here might be a blockquote?? but still unsure -->     
+				<section class="figures"> 
 					<figure lang="de">
 							<blockquote class="quote-one">
-								<!-- my code tutor Hoseok taught me this amazing way you can select each caracter using command d then with the arrows select each caracter. From there you can create 506 (number of letters in this block) simultanious cursors to add spans around each word! It was very cool! YOu can find out more here: https://code.visualstudio.com/docs/editing/codebasics#_multiple-selections-multicursor-->
 								<span>D</span><span>i</span><span>e</span><span> </span><span>u</span><span>n</span><span>r</span><span>e</span><span>g</span><span>e</span><span>l</span><span>m</span><span>ä</span><span>f</span><span>s</span><span>i</span><span>g</span><span>k</span><span>e</span><span>i</span><span>t</span><span> </span><span>d</span><span>i</span><span>e</span><span>f</span><span>e</span><span>s</span><span> </span><span>f</span><span>a</span><span>t</span><span>z</span><span>e</span><span>s</span><span> </span><span>w</span><span>i</span><span>r</span><span>d</span><span> </span><span>d</span><span>u</span><span>r</span><span>c</span><span>h</span><span> </span><span>d</span><span>i</span><span>e</span><span> </span><span>t</span><span>y</span><span>p</span><span>e</span><span>n</span><span> </span><span>d</span><span>e</span><span>r</span><span> </span><span>b</span><span>u</span><span>c</span><span>h</span><span>f</span><span>t</span><span>a</span><span>b</span><span>e</span><span>n</span><span> </span><span>a</span><span> </span><span>u</span><span>n</span><span>d</span><span> </span><span>e</span><span> </span><span>v</span><span>e</span><span>r</span><span>u</span><span>r</span><span>f</span><span>a</span><span>c</span><span>h</span><span>t</span><span>;</span><span> </span><span>f</span><span>i</span><span>e</span><span> </span><span>f</span><span>i</span><span>n</span><span>d</span><span> </span><span>z</span><span>w</span><span>a</span><span>r</span><span> </span><span>g</span><span>r</span><span>ö</span><span>f</span><span>s</span><span>e</span><span>r</span><span> </span><span>a</span><span>l</span><span>s</span><span> </span><span>d</span><span>i</span><span>e</span><span> </span><span>a</span><span>n</span><span>d</span><span>e</span><span>r</span><span>e</span><span>n</span><span> </span><span>l</span><span>e</span><span>t</span><span>t</span><span>e</span><span>r</span><span>n</span><span>,</span><span> </span><span>b</span><span>e</span><span>i</span><span> </span><span>g</span><span>e</span><span>n</span><span>a</span><span>u</span><span>e</span><span>r</span><span> </span><span>m</span><span>e</span><span>f</span><span>s</span><span>u</span><span>n</span><span>g</span><span> </span><span>a</span><span>b</span><span>e</span><span>r</span><span> </span><span>d</span><span>o</span><span>c</span><span>h</span><span> </span><span>n</span><span>u</span><span>r</span><span> </span><span>u</span><span>m</span><span> </span><span>d</span><span>r</span><span>e</span><span>i</span><span>z</span><span>e</span><span>h</span><span>n</span><span> </span><span>t</span><span>a</span><span>u</span><span>f</span><span>e</span><span>n</span><span>d</span><span>t</span><span>e</span><span>i</span><span>l</span><span>e</span><span> </span><span>e</span><span>i</span><span>n</span><span>e</span><span>s</span><span> </span><span>z</span><span>o</span><span>l</span><span>l</span><span>s</span><span>.</span><span> </span><span>D</span><span>i</span><span>e</span><span>f</span><span>e</span><span>r</span><span> </span><span>v</span><span>e</span><span>r</span><span>f</span><span>c</span><span>h</span><span>w</span><span>i</span><span>n</span><span>d</span><span>e</span><span>n</span><span>d</span><span> </span><span>k</span><span>l</span><span>e</span><span>i</span><span>n</span><span>e</span><span> </span><span>u</span><span>n</span><span>t</span><span>e</span><span>r</span><span>f</span><span>c</span><span>h</span><span>i</span><span>e</span><span>d</span><span> </span><span>w</span><span>i</span><span>e</span><span>d</span><span>e</span><span>r</span><span>h</span><span>o</span><span>l</span><span>t</span><span> </span><span>u</span><span>n</span><span>d</span><span> </span><span>v</span><span>e</span><span>r</span><span>g</span><span>r</span><span>ö</span><span>f</span><span>s</span><span>e</span><span>r</span><span>t</span><span> </span><span>f</span><span>i</span><span>c</span><span>h</span><span> </span><span>m</span><span>i</span><span>t</span><span> </span><span>j</span><span>e</span><span>d</span><span>e</span><span>r</span><span> </span><span>z</span><span>e</span><span>i</span><span>l</span><span>e</span><span>,</span><span> </span><span>b</span><span>i</span><span>s</span><span> </span><span>d</span><span>e</span><span>r</span><span> </span><span>z</span><span>u</span><span>f</span><span>a</span><span>m</span><span>m</span><span>e</span><span>n</span><span>h</span><span>a</span><span>n</span><span>g</span><span> </span><span>d</span><span>e</span><span>r</span><span> </span><span>w</span><span>ö</span><span>r</span><span>t</span><span>e</span><span>r</span><span> </span><span>u</span><span>n</span><span>d</span><span> </span><span>l</span><span>i</span><span>n</span><span>i</span><span>e</span><span>n</span><span> </span><span>z</span><span>u</span><span>m</span><span> </span><span>t</span><span>e</span><span>i</span><span>l</span><span> </span><span>z</span><span>e</span><span>r</span><span>f</span><span>t</span><span>ö</span><span>r</span><span>t</span><span> </span><span>w</span><span>i</span><span>r</span><span>d</span><span> </span><span>W</span><span>e</span><span>n</span><span>n</span><span> </span><span>d</span><span>a</span><span>s</span><span> </span><span>B</span><span>r</span><span>ö</span><span>f</span><span>s</span><span>e</span><span>r</span><span>e</span><span> </span><span>a</span><span> </span><span>u</span><span>n</span><span>d</span><span> </span><span>e</span><span> </span><span>n</span><span>o</span><span>c</span><span>h</span><span> </span><span>z</span><span>u</span><span> </span><span>e</span><span>i</span><span>n</span><span>e</span><span>m</span><span> </span><span>d</span><span>u</span><span>t</span><span>z</span><span>e</span><span>n</span><span>d</span><span> </span><span>l</span><span>i</span><span>n</span><span>i</span><span>e</span><span>n</span><span> </span><span>v</span><span>e</span><span>r</span><span>w</span><span>e</span><span>n</span><span>d</span><span>e</span><span>t</span><span> </span><span>w</span><span>e</span><span>r</span><span>d</span><span>e</span><span>n</span><span> </span><span>f</span><span>o</span><span>l</span><span>l</span><span>t</span><span>e</span><span>,</span><span> </span><span>f</span><span>o</span><span> </span><span>w</span><span>ä</span><span>r</span><span>e</span><span> </span><span>d</span><span>e</span><span>r</span><span> </span><span>l</span><span>e</span><span>f</span><span>e</span><span>r</span><span> </span><span>g</span><span>a</span><span>r</span><span> </span><span>n</span><span>i</span><span>c</span><span>h</span><span>t</span><span> </span><span>m</span><span>e</span><span>r</span><span> </span><span>i</span><span>m</span><span> </span><span>f</span><span>t</span><span>a</span><span>n</span><span>d</span><span>e</span><span> </span><span>d</span><span>e</span><span>n</span><span> </span><span>f</span><span>a</span><span>t</span><span>z</span><span> </span><span>z</span><span>u</span><span> </span><span>l</span><span>e</span><span>f</span><span>e</span><span>n</span><span>.</span>
 							</blockquote>
 							<figcaption lang="en">
 								<sup>1</sup> Illegibility resulting from the mixture of types of differing body sizes (the 'a' and 'e' are 13 thou larger than the other letters). <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmj4wpHLL21MXw6dFFZc8nqIxE0qEcMYjpeQ&s"target="_blank"><cite>H. Meisner and J. Luther, Die Erfindung der Buchdruckerkunst, Bielefeld & Ieipzig: Velhagen & Klasing</cite></a>, <time datetime="1900">1900</time>.
 							</figcaption>
-					</figure>  
-					<!-- some of my latin letters are being highlighted here, not sure what that means...-->   
+					</figure>   
 					<figure lang="la">
 							<blockquote class="quote-two">
 							Edilcipline LultaDiirorupiiltia- 
@@ -160,15 +127,10 @@
 							Iaxartiff' oftia
 						</blockquote>
 						<figcaption lang="en"> 
-							<!-- how to open in a new tab! MDN https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a -->
 							<sup>3</sup> <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVTRNHt84_gF2Purg5r06OPwR2AcOU_3xMUA&s"target="_blank"><cite> Ptolemy, Cosmographia, Ulm, </cite></a> <time datetime="1428">1482.</time> Note the comparatively small size of the numerator in fractions; compare Stock Exchange fractions in financial columns an alternative solutions.
 						</figcaption>
 					</figure>  
 				</section>  
-				<!-- choosing not to include this one because it doesn't add much interms of the explaining the content, also looks image like. Left it here in case I change my mind.
-				c'etait issu stellaire le nombre EXISTAT-IL autrement qu'hallucination eparse d'agonie COMMENCAT-IL ET CESSAT-IL sourdant que nie et clos quand apparu par quelque profusion repandue en rarete SE CHIFFRAT-IL evidence de la somme pour peu qu'une ILLUMINAT-IL ce serait pire non davantage ni moins mais autant indifferemnent LE HASARD
-				[4] Stéphane Mallarmé, 'Un coup de dés', Cosmopolis, May 1897. Consider also the problems necessarily raised by poets in a socio-religious sense, discussed by Stefan Themerson, Cardinal Pölätüo (London: Gaberbocchus Press, 1961); note also the problems of relating the manuscript to typographical constraints, discussed by the same author in a most creative article 'Idéogrammes lyriques' (Typographica, no. 14, 1966, pp. 2-24). -->
-				<!-- here's the section that was cut off half way -->
 				<section class="body-continued">
 					<p>
 						But the length of line, the width of setting, provided another dimension. It seem that this horizontal dimension (x) of the grid was determined by convention, and embodied in the Procrustean bed of the composing stick probably at that time, as more lately in the case of 13-pica fixed newspaper sticks, an unadjustable hod into which the standard bricks of characters could be successionally piled.
@@ -204,11 +166,9 @@
 					<span> TYPOGRAPHY </span>
 					<span> IS A SYSTEM OF RULES </span>
 				</h2>
-				<!-- reworked parts of my response in terms of the text - refer to the latest figma for accurate version if needed -->
+
 				<section class="intro-response">
 					<p class="author-date">Melody Ekbatani,
-						<!-- I also learnt about the time element on mdn and from the example! -->
-						<!-- also not sure about the punctuation/spacing and if it falls after the code elements and the cite element in general -->
 						<time datetime="2025">2025</time>
 					</p>
 				</section>
