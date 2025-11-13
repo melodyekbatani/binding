@@ -1,4 +1,22 @@
 body{
+    font-weight: 400;
+    font-style: normal;
+    animation: gradient 6s infinite;
+  animation-timing-function: linear;
+}
+.header{
+  font-size: 50px;
+}
+/*
+@keyframes gradient {
+    0% {background-image: linear-gradient(to right, rgb(245, 176, 176) , rgb(207, 255, 255));}
+    25% {background-image: linear-gradient(to right, rgb(100, 241, 241) , rgb(255, 203, 203));}
+    50% {background-image: linear-gradient(to right, rgb(255, 167, 167) , rgb(116, 69, 255));}
+    100% {background-image: linear-gradient(to right, rgb(255, 255, 255) , azure);}
+} 
+*/
+
+body{
     font-family: 'Switzer', sans-serif;
 }
 font-family: 'Bespoke Serif', serif;
@@ -12,7 +30,7 @@ a{
 
 h1{
     font-family: 'Gambarino', serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-block-start: 3rem;
     line-height: 1;
 }
@@ -70,8 +88,6 @@ nav {
     left: 0;
     margin-block-end: 3rem;
 
-
-
 	li {
         font-weight: 300;
         line-height: 85%;
@@ -83,13 +99,9 @@ nav {
 }
 
 footer {
-color: red;
-    border-top-left-radius:3rem;
-    border-top-right-radius:3rem;
-    background-color: black;
+color: black;
     padding-block: 1rem;
     width: 100%;
-    position: fixed;
     bottom:0;
     left: 0;
 p {
