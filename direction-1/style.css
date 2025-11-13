@@ -1,36 +1,39 @@
 body{
     font-weight: 400;
     font-style: normal;
-    animation: gradient 6s infinite;
-  animation-timing-function: linear;
+  background-image: linear-gradient(90deg, rgb(246, 211, 211), white);
+  background-size: 400% 400%;
+  /* backdrop-filter: blur(100px); */
+  height: 100vh;
+  animation: gradient 20s ease infinite;
+
+
 }
 .header{
   font-size: 50px;
 }
-/*
+
 @keyframes gradient {
-    0% {background-image: linear-gradient(to right, rgb(245, 176, 176) , rgb(207, 255, 255));}
-    25% {background-image: linear-gradient(to right, rgb(100, 241, 241) , rgb(255, 203, 203));}
-    50% {background-image: linear-gradient(to right, rgb(255, 167, 167) , rgb(116, 69, 255));}
-    100% {background-image: linear-gradient(to right, rgb(255, 255, 255) , azure);}
+    0% {background-position: 0%;}
+    50% {background-position: 100%;}
+    100% {background-position: 0%;}
 } 
-*/
+
 
 body{
     font-family: 'Switzer', sans-serif;
 }
-font-family: 'Bespoke Serif', serif;
+/*font-family: 'Bespoke Serif', serif;
 font-family: 'Switzer', sans-serif;
-font-family: 'Gambarino', serif;
+font-family: 'Gambarino', serif;*/
 
 a{
-    text-decoration: underline;
-    color: Orchid;
+    color: rgb(66, 66, 66);
 }
 
 h1{
     font-family: 'Gambarino', serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-block-start: 3rem;
     line-height: 1;
 }
@@ -89,12 +92,12 @@ nav {
     margin-block-end: 3rem;
 
 	li {
-        font-weight: 300;
+        font-weight: 100;
         line-height: 85%;
-		font-size: 1rem;
+		font-size: 0.75rem;
         padding: 0.5rem;
-        border-bottom: 0.1px;
-        border-style:dotted;
+        text-align: left;
+        border-bottom: 1px dotted grey ;
 	}
 }
 
@@ -111,9 +114,9 @@ text-align: center;
 }
 /* ipad media querie */
 @media screen and (min-width: 768px) {
-    body {
+    /* body {
         background-color: white;
-    }
+    } */
 
     p{
         width: 70ch;
@@ -126,9 +129,9 @@ text-align: center;
         font-size: 24px;
     }
 
-    body {
+    /* body {
         background-color: white;
-    }
+    } */
     p{
         width: 80%;
     }
