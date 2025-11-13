@@ -83,6 +83,9 @@ nav {
 				color: #b8b8b8;
 			}
 	}
+    ol {
+    text-align: center;
+    }
 }
 
 footer {

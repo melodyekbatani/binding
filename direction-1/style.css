@@ -6,6 +6,7 @@ body{
   /* backdrop-filter: blur(100px); */
   height: 100vh;
   animation: gradient 20s ease infinite;
+  overflow-x: hidden;
 
 
 }
@@ -97,8 +98,14 @@ nav {
 		font-size: 0.75rem;
         padding: 0.5rem;
         text-align: left;
-        border-bottom: 1px dotted grey ;
 	}
+    .hr{
+        border-bottom: 1px dotted black;
+        width: 150%;
+        position: relative;
+        left: -20%;
+        margin-top: -1%;
+    }
 }
 
 footer {
