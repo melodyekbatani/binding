@@ -1,13 +1,18 @@
 body{
-    font-family: "Stack Sans Headline", sans-serif;
+    font-family: 'Switzer', sans-serif;
 }
+font-family: 'Bespoke Serif', serif;
+font-family: 'Switzer', sans-serif;
+font-family: 'Gambarino', serif;
+
 a{
     text-decoration: underline;
     color: Orchid;
 }
 
 h1{
-    font-size: 2.5rem;
+    font-family: 'Gambarino', serif;
+    font-size: 3rem;
     margin-block-start: 3rem;
     line-height: 1;
 }
@@ -58,30 +63,22 @@ sup{
     vertical-align: super;
 }
 nav {
-	background-color: black;
-	position: fixed;
+    font-family: 'Switzer', sans-serif;
+    font-weight: 100;
 	z-index: 1000;
-	width: 100%;
     top:0;
     left: 0;
-    margin-block-end: 10rem;
-    border-bottom-left-radius:3rem;
-    border-bottom-right-radius:3rem;
-    padding:1rem;
+    margin-block-end: 3rem;
+
 
 
 	li {
         font-weight: 300;
         line-height: 85%;
 		font-size: 1rem;
-		border-radius: 0px;
-		display: inline-block;
-		text-align: center;
-        padding-inline: 2.3rem;
-
-		:hover  {
-				color: #b8b8b8;
-			}
+        padding: 0.5rem;
+        border-bottom: 0.1px;
+        border-style:dotted;
 	}
 }
 
