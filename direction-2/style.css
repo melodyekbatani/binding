@@ -3,12 +3,12 @@ body{
 }
 a{
     text-decoration: underline;
-    color: blue;
+    color: red;
 }
 
 h1{
     font-size: 2.5rem;
-    margin-block: 1rem;
+    margin-block-start: 3rem;
     line-height: 1;
 }
 .author-date {
@@ -29,6 +29,8 @@ blockquote {
     margin-block-end: 1rem;
     font-style: italic;
     font-weight: 500;
+    color: rgb(189, 189, 189);
+    font-size: 0.8rem;
 }
 
 .footnotes {
@@ -55,7 +57,49 @@ sup{
     font-size: 0.5rem;
     vertical-align: super;
 }
+nav {
+	background-color: black;
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+    top:0;
+    left: 0;
+    margin-block-end: 10rem;
+    border-bottom-left-radius:3rem;
+    border-bottom-right-radius:3rem;
+    padding:1rem;
 
+
+	li {
+        font-weight: 300;
+        line-height: 85%;
+		font-size: 1rem;
+		border-radius: 0px;
+		display: inline-block;
+		text-align: center;
+        padding-inline: 2.3rem;
+
+		:hover  {
+				color: #b8b8b8;
+			}
+	}
+}
+
+footer {
+color: red;
+    border-top-left-radius:3rem;
+    border-top-right-radius:3rem;
+    background-color: black;
+    padding-block: 1rem;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    left: 0;
+p {
+text-align: center;
+}
+
+}
 /* ipad media querie */
 @media screen and (min-width: 768px) {
     body {
