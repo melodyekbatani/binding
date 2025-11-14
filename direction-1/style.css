@@ -3,7 +3,7 @@
 body{
     font-weight: 400;
     font-style: normal;
-  /* background-image: linear-gradient(90deg, white ,rgb(129, 129, 255), pink, yellow, rgb(255, 200, 200), white);
+  /* learnt this from code tutor may use later-  background-image: linear-gradient(90deg, white ,rgb(129, 129, 255), pink, yellow, rgb(255, 200, 200), white);
   background-size: 400% 400%;
   /* backdrop-filter: blur(100px); */
   /* height: vh;
@@ -14,7 +14,7 @@ body{
 .header{
 }
 
-/* @keyframes gradient {
+/* learnt this from code tutor-  @keyframes gradient {
     0% {background-position: 0%;}
     50% {background-position: 100%;}
     100% {background-position: 0%;}
@@ -127,6 +127,7 @@ nav {
         text-transform: uppercase;
 
 	}
+   /* worked on this with CD code tutor */
    .hr {
     border-bottom: 1px dotted black;
     width: 100%;
