@@ -9,7 +9,7 @@ font-family: 'Gambarino', serif;*/
     font-family: 'Switzer', sans-serif;;
 }
 body{
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     overflow-x: hidden;
 }
@@ -115,7 +115,7 @@ h1{
 p {
     width: 100%;
     margin-block-end: 3rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     max-width: 100%;
      line-height: 1.25rem;
 }
@@ -127,7 +127,7 @@ blockquote {
     margin-block-end: 1.5rem;
     font-weight: 200;
     color: rgb(0, 0, 0);
-    font-size: 1.07rem;
+    font-size: 1.3rem;
     padding: 0.5rem;
     border-block: 1px dotted grey;
     letter-spacing:0.01rem;
