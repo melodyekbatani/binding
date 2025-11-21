@@ -127,6 +127,7 @@ p {
     margin-block-end: 3rem;
     font-size: 0.9rem;
     max-width: 100%;
+     line-height: 1.25rem;
 }
 
 blockquote {
@@ -135,7 +136,7 @@ blockquote {
     margin-block-start: 2.5rem;
     margin-block-end: 1.5rem;
     font-weight: 200;
-    color: rgb(0, 0, 0);
+    color: rgb(211, 211, 211);
     font-size: 1.07rem;
     padding: 0.5rem;
     border-block: 1px dotted grey;

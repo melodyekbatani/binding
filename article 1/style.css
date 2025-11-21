@@ -117,6 +117,7 @@ p {
     margin-block-end: 3rem;
     font-size: 0.9rem;
     max-width: 100%;
+     line-height: 1.25rem;
 }
 
 blockquote {
