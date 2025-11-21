@@ -9,9 +9,10 @@ font-family: 'Gambarino', serif;*/
     font-family: 'Switzer', sans-serif;;
 }
 body{
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     overflow-x: hidden;
+    color: rgb(87, 87, 87);
 }
 
 /* nav {
