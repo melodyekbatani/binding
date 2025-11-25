@@ -15,6 +15,24 @@ body{
     color: rgb(87, 87, 87);
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.braille-text{
+    padding-inline: 3.25rem;
+    margin-block-start: 1.3rem;
+
+    pre{
+        width:100%;
+        padding-block: 1.5rem;
+        font-size: calc((100vw - 6.5rem) * 0.015);
+        border: 1px rgba(0, 0, 0, 0.3) solid;
+        color: black;
+        overflow: hidden;
+    }
+}
 /* nav {
 	z-index: 1000;
     top:0;
@@ -214,6 +232,25 @@ sup{
 @media screen and (min-width: 1920px) {
     html {
         font-size: 24px;
+    }
+
+    header {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        h1 {
+            max-width: 24ch;
+            text-align: start;
+        }
+
+        figure {
+            width: 50%;
+            
+            pre {
+                width: 100%;
+                font-size: 0.665rem;
+            }
+        }
     }
 
     /* body {
