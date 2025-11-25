@@ -15,20 +15,32 @@
     <div id="top-of-page">
     </div>
     <nav>
-        <div class="home"><a href="../index.html">Home</a></div>
-        <div class="menu">
-            <a class="row1 title" href="../article 1/index.html">Typography is a Grid</a>
-            <a class="row2 title" href="../article 2/index.html">Castles made of Sand</a>
-            <a class="row3 title" href="../article 3/index.html">This is Autotune Type</a>
-
-            <div class="row1 author">Anthony Froshaugh</div>
-            <div class="row2 author">Lorraine Wild</div>
-            <div class="row3 author">Silvia Sfligiotti</div>
-
-            <div class="row1 date">1967</div>
-            <div class="row2 date">1994</div>
-            <div class="row3 date">2020</div>
+        <div class="top-bar">
+            <a href="../index.html">Home</a>
+            <span class="top-bar-title">Menu</span>
+            <label class="top-bar-toggle-label" for="menu-toggle-button">X</label>
         </div>
+        <input id="menu-toggle-button" type="checkbox" />
+        <ul class="menu">
+            <li>
+                <a href="../article 1/index.html">
+                    <div class="title">Typography is a Grid</div>
+                    <div class="author-date">Anthony Froshaugh, 1967</div>
+                </a>
+            </li>
+            <li class="active">
+                <a href="../article 2/index.html">
+                    <div class="title">Castles made of Sand</div>
+                    <div class="author-date">Lorraine Wild, 1994</div>
+                </a>
+            </li>
+            <li>
+                <a href="../article 3/index.html">
+                    <div class="title">This is Autotune Type</div>
+                    <div class="author-date">Silvia Sfligiotti, 2020</div>
+                </a>
+            </li>
+        </ul>
     </nav>
         <header>
             <figure class="braille-text">
