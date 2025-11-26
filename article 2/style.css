@@ -221,8 +221,11 @@ figure {
 sup{
     font-size: 0.5rem;
     vertical-align: super;
-
     }
+
+a {
+    color:red;
+}
 
 .meta {
     display: flex;
