@@ -1,28 +1,70 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Mel's Binding </title>   
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="common.css">
-        <link rel="stylesheet" href="https://use.typekit.net/ewi3mxs.css">
+<html lang="en">
 
-    </head>
-    <body>
+<head>
+	<title> Castles Made of Sand </title>
+	<link href="../reset.css" rel="stylesheet">
+	<link href="./common.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://api.fontshare.com/v2/css?f[]=rx-100@400&display=swap" rel="stylesheet">
+	<link href="https://api.fontshare.com/v2/css?f[]=recia@1&display=swap" rel="stylesheet">
 
-        <div class="home"><a href="../index.html">Home</a></div>
-          <div class="menu">
-                <a class="row1 title" href="./article 1/index.html">Typography is a Grid</a>
-                <a class="row2 title" href="./article 2/index.html">Castles made of Sand</a>   
-                <a class="row3 title" href="./article 3/index.html">This is Autotune Type</a>     
+</head>
 
-                <div class="row1 author" >Anthony Froshaugh</div>
-                <div class="row2 author">Lorraine Wild</div>
-                <div class="row3 author">Silvia Sfligiotti</div>
+<body>
+	<div id="top-of-page">
+	</div>
+	<nav>
+		<div class="top-bar">
+			<a href="../index.html">Home</a>
+			<span class="top-bar-title">Menu</span>
+			<label class="top-bar-toggle-label" for="menu-toggle-button">X</label>
+		</div>
+		<input id="menu-toggle-button" type="checkbox" />
+		<ul class="menu">
+			<li>
+				<a class="row1" href="./article 1/index.html">
+					<div class="title">Typography is a Grid</div>
+					<div class="author-date">Anthony Froshaugh, 1967</div>
+				</a>
+			</li>
+			<li class="active">
+				<a href="./article 2/index.html">
+					<div class="title">Castles made of Sand</div>
+					<div class="author-date">Lorraine Wild, 1994</div>
+				</a>
+			</li>
+			<li>
+				<a class="row3" href="./article 3/index.html">
+					<div class="title">This is Autotune Type</div>
+					<div class="author-date">Silvia Sfligiotti, 2020</div>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<header>
+		<figure class="braille-text">
+			<pre>
+			FILL IN LATER
+			</pre>
+		</figure>
+		<div class="titles">
+			<h1>
+				On type
+			</h1>
+			<p class="author-date">Melody Ekbatani
+			</p>
+		</div>
+	</header>
+	<main>
+	</main>
+	<footer>
+		<p class="footer title">ON TYPE</p>
+		<p> Melody Ekbatani </p>
+		<p> Typography and Interaction 1</p>
+		<a href="#top-of-page">Back to top</a>
+	</footer>
+</body>
 
-                <div class="row1 date">1967</div>
-                <div class="row2 date">1994</div>
-                <div class="row3 date">2020</div>
-        </div>
-    </body>
 </html>
