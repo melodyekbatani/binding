@@ -1,3 +1,29 @@
 :root {
-	background-color: blanchedalmond;
+	background-color: rgb(255, 255, 255);
 }
+@media screen and (min-width: 1400px) {
+.menu {
+			flex-direction: row;
+			flex: 1;
+			height: auto;
+			background-color: black;
+			
+
+			li {
+			
+				a {
+					color: white;
+				}
+
+				&.active {
+					border-block-end: 0;
+					background-color: white;
+					color: black;
+
+					a{
+						color: black;
+					}
+				}
+			}
+		}
+	}

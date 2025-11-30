@@ -15,7 +15,7 @@ html {
 
 body {
 	overflow-x: hidden;
-	color: rgb(87, 87, 87);
+	color: rgb(101, 101, 101);
 	font-family: 'Recia', serif;
 }
 
@@ -23,8 +23,10 @@ p {
 	font-family: 'Recia', serif;
 	width: 100%;
 	margin-block-end: 1rem;
-	font-size: 1rem;
+	font-size: 0.9rem;
+	color: black;
 	max-width: 100%;
+
 
 	padding-inline: 1rem;
 }
@@ -93,7 +95,6 @@ nav {
 			}
 
 			.title {
-				color: #494949;
 				font-size: 1rem;
 				text-transform: uppercase;
 			}
@@ -107,17 +108,21 @@ nav {
 			a {
 				text-decoration: none;
 			}
+			}
 		}
 	}
 
 	#menu-toggle-button:checked+.menu {
 		height: calc(15.5rem + 1px);
 	}
-}
+
 
 header {
 	display: flex;
 	flex-direction: column;
+	background-color: black;
+	margin-block: 2rem;
+	padding-block-end: 0rem;
 }
 
 .braille-text {
@@ -142,44 +147,58 @@ header {
 }
 
 
-
-
 h1 {
 	font-family: 'JetBrains Mono', sans-serif;
 	text-transform: uppercase;
 	font-weight: 300;
-	color: rgb(66, 66, 66);
-	font-size: 3rem;
+	color: black;
+	font-size: 3.5rem;
 	letter-spacing: 0.1rem;
-
-	margin-block-start: 8rem;
+	margin-block-start: 0rem;
+	font-weight: 700;
+}
+.titles{
+	margin-block-start: 2rem;
 	line-height: 1;
 	text-align: left;
 	padding: 1rem;
+	background-color: white;
+	margin-inline: 2rem;
+	margin-inline-end: 5rem;
 }
+.author-date {
+				font-size: 0.8rem;
+				text-decoration: none;
+				font-family: 'Recia', serif;
+			}
 
 blockquote {
-	font-family: 'JetBrains Mono', sans-serif;
-	text-transform: uppercase;
+	font-family: 'Recia', serif;
 	margin-block-start: 2.5rem;
 	margin-block-end: 1.5rem;
 	font-weight: 200;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	background-color: #000000;
 	font-size: 1.3rem;
 	border-block: 1px dotted grey;
 	letter-spacing: 0.01rem;
 	padding: 1rem;
+	margin-inline-end: 0rem;
 
 }
 
 .footnotes {
 	/* border-block: 1px dotted grey; */
+	font-family: 'JetBrains Mono', sans-serif;
+	text-transform: uppercase;
 	font-size: 0.5rem;
 	margin-block-start: 0rem;
 	padding: 1rem;
+	margin-block: 1rem;
 	font-size: 0.8rem;
-	font-family: 'Recia', serif;
-	color: #a1a1a1;
+	color: #000000;
+	background-color: lightgray;
+
 
 	&>* {
 		font-size: 100%;
@@ -217,46 +236,53 @@ a {
 
 footer {
 	font-size: 1rem;
-	font-family: 'Bespoke Serif', serif;
-	text-transform: uppercase;
 	font-weight: 500;
-	padding-block: 1rem;
+	padding-block: 1.5rem;
+	scroll-margin-block-end: 1rem;
 	border-block: 1px dotted grey;
+	background-color: black;
+	padding-block-start: -3rem;
 
+.footer-text
+{
+	background-color: rgb(255, 255, 255);
+	margin-block-start: -2rem;
+	margin-inline-end: 43rem;
+	margin-inline-start: 3rem;
+}
 	.footer-title {
 		font-family: 'JetBrains Mono', sans-serif;
 		text-transform: uppercase;
-		margin-block-start: 1.5rem;
-		margin-block-end: 1.5rem;
-		font-weight: 200;
-		color: rgb(0, 0, 0);
-		font-size: 4rem;
+		font-weight:700;
+		margin-block-end: 0.5rem;
+		font-weight: 700;
+		color: black;
+		font-size: 1.5rem;
 		padding-inline-start: 1rem;
 		text-align: left;
 	}
 
 	p {
-		font-family: 'JetBrains Mono', sans-serif;
-		text-transform: uppercase;
+
+		font-family: 'Recia', serif;
 		font-weight: 200;
-		color: rgb(97, 97, 97);
-		font-size: 1rem;
+		color: rgb(0, 0, 0);
+		font-size: 0.8rem;
 		padding-inline-start: 1rem;
 		text-align: left;
-		margin-block:0.5rem;
+		margin-block-end: 2rem;
+		padding-block-end:1rem;
 	}
 
 	a {
-		font-family: 'JetBrains Mono', sans-serif;
-		text-transform: uppercase;
+		font-family: 'Recia', serif;
 		font-weight: 200;
-		color: #a1a1a1
-		font-size: 1rem;
+		color:rgb(0, 0, 0);
+		font-size: 0.8rem;
 		padding-inline-start: 1rem;
 		text-align: left;
-		margin-block:0.5rem;
 		text-decoration: none;
-		padding-block: 0rem;
+		margin-block-end: 1rem;
 	}
 
 	sup {
@@ -268,6 +294,18 @@ footer {
 
 /* ipad media querie */
 @media screen and (min-width: 768px) {
+header {
+		padding-inline-end: 20rem;
+		/* flex-direction: row-reverse;
+		justify-content: space-between;  */
+		h1 {
+			max-width: 12ch;
+			font-size: 5rem;
+			text-align: start;
+			padding-inline-start: 0rem;
+		}
+	}
+
 }
 
 /* laptop media querie */
@@ -299,15 +337,18 @@ footer {
 			flex-direction: row;
 			flex: 1;
 			height: auto;
+			color: black;
 
 			li {
 				flex: 1;
 				border-inline-start: 1px #868686 solid;
 				text-align: start;
+				color: black;
 
 				a {
 					padding-inline: 1.2rem;
 					padding-block: 0.5rem;
+
 				}
 
 				&.active {
@@ -316,25 +357,28 @@ footer {
 			}
 		}
 	}
+	
 
 	header {
-		flex-direction: row-reverse;
-		justify-content: space-between;
-
+		padding-inline-end: 25rem;
+		/* flex-direction: row-reverse;
+		justify-content: space-between;  */
 		h1 {
-			max-width: 30ch;
+			
 			font-size: 4rem;
 			text-align: start;
-			padding-inline-start: 2rem;
-			padding-block-end: 1rem;
+			padding-inline-start: 0rem;
+			font-weight: 700;
+			letter-spacing: -0.1rem;
+			
 		}
 
 		.author-date {
 			font-size: 1rem;
-			font-family: 'JetBrains Mono', monospace;
+			margin-inline-start: -2rem;
 		}
 
-		figure {
+		/* figure {
 			width: 50%;
 
 			pre {
@@ -342,39 +386,57 @@ footer {
 				font-size: 0.665rem;
 			}
 		}
-	}
+	} */
 
 	/* body {
 		background-color: white;
 	} */
 	p {
 		font-size: 0.9rem;
-		width: 70%;
-		padding-block: 1rem;
+		padding-block: 0.5rem;
 		padding-inline: 2rem;
-
+	}
+	}
+	main {
+		padding-inline-end: 4rem;
 	}
 
+	p {
+		padding-inline-start: 20rem;
+		padding-inline-end: 2rem;
+	}
 	.figures {
 		display: flex;
 		gap: 1rem;
 	}
 
+
 	blockquote {
 		width: 70%;
-		font-size: 1.55rem;
+		font-size: 1.3rem;
 		letter-spacing: 0.001;
 		text-align: start;
-		margin-inline: 2rem;
+		margin-inline-start: 20rem;
+		padding-inline-end: 3rem;
+		margin-inline-end: 10rem;
 		position: relative;
 		border: 1px dotted grey;
-		color: rgb(61, 61, 61);
+		background-color: black;
 
 	}
 
 	.footnotes {
 		font-size: 0.6rem;
-		padding-inline-start: 2rem;
+		padding-inline-start: 0rem;
+		font-family: 'JetBrains Mono', sans-serif;
+		text-transform: uppercase;
 		width: 70%;
+		margin-inline-start: 20rem;
+		padding-inline-start: 1rem;
+		padding-block-end: 1rem;
+		padding-block-start: 1rem;
+		padding-inline-end: 0rem;
+		margin-inline-end: 0rem;
+		margin-block: 1rem;
 	}
 }
