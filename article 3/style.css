@@ -2,11 +2,11 @@
 	background-color: rgb(255, 255, 255);
 }
 header{
-	background-image:
+	/* background-image:
 		radial-gradient(rgb(0, 0, 0) 1.6px, transparent 0);
 	background-size: 8px 34px;
 	background-position: 0 0;
-	background-color: #ffffff;
+	background-color: #ffffff; */
 }
 
 @media screen and (min-width: 1400px) {
@@ -14,19 +14,22 @@ header{
 			flex-direction: row;
 			flex: 1;
 			height: auto;
-			background-color: black;
+			background-color: rgb(255, 255, 255);
 			
 
 			li {
 			
+				.title{
+				}
+
 				a {
-					color: white;
+					color: rgb(0, 0, 0);
 				}
 
 				&.active {
-					border-block-end: 0;
+					border-block-end: 1;
 					background-color: white;
-					color: black;
+					color: rgb(0, 0, 0);
 
 					a{
 						color: black;
@@ -36,6 +39,6 @@ header{
 		}
 		main {
 			display:grid;
-			
+
 		}
 	}

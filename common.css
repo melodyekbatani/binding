@@ -6,6 +6,10 @@
 	font-family: 'Recia';
 	src: url('./media/fonts/Recia-Variable.ttf') format('truetype');
 }
+@font-face {
+	font-family: 'Ranade';
+	src: url('./media/fonts/Ranade-Variable.ttf') format('truetype');
+}
 
 :root {
 	background-color: white;
@@ -142,14 +146,26 @@ h1 {
 }
 
 .author-date {
-	color: white;
+	color: rgb(0, 0, 0);
 	font-size: 0.8rem;
 	text-decoration: none;
-	font-family: 'JetBrains Mono', sans-serif;
-	text-transform: uppercase;
+	font-family:'JetBrains Mono', monospace; 
 	margin-inline-start: 0rem;
 }
-
+h2{
+	font-family: 'JetBrains Mono', monospace;
+		font-size: 1.3rem;
+		text-transform: uppercase;
+		padding-inline-start:1rem;
+		position: sticky;
+		top: 0;
+		padding: 2rem;
+		z-index: 30;
+		letter-spacing: 0.08em;
+		color: rgb(0, 0, 0);
+		background-color: rgb(255, 255, 255);
+		border: none;
+}
 /* body */
 
 blockquote {
