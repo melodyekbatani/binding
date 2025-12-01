@@ -193,6 +193,8 @@ p {
 	color: black;
 	max-width: 100%;
 	padding-inline: 1rem;
+	padding-block:1.5rem;
+	letter-spacing: 0.07rem;
 }
 
 .footnotes {
