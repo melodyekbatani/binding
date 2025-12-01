@@ -1,3 +1,12 @@
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url('./media/fonts/JetBrainsMono-Variable.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Recia';
+	src: url('./media/fonts/Recia-Variable.ttf') format('truetype');
+}
+
 :root {
 	background-color: white;
 }
