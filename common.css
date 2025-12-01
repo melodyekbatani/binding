@@ -7,8 +7,8 @@
 	src: url('./media/fonts/Recia-Variable.ttf') format('truetype');
 }
 @font-face {
-	font-family: 'Ranade';
-	src: url('./media/fonts/Ranade-Variable.ttf') format('truetype');
+	font-family: 'Cabinet';
+	src: url('./media/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
 }
 
 :root {
@@ -89,13 +89,15 @@ nav {
 			.title {
 				font-size: 1rem;
 				text-transform: uppercase;
+				text-align: center;
 			}
 
 			.author-date {
-				font-size: 0.7rem;
+				font-size: 0.6rem;
 				text-decoration: none;
 				font-family: 'JetBrains Mono', monospace;
-				text-transform: uppercase;
+				text-align: center;
+				font-weight: 100;
 			}
 
 			a {
@@ -151,6 +153,7 @@ h1 {
 	text-decoration: none;
 	font-family:'JetBrains Mono', monospace; 
 	margin-inline-start: 0rem;
+	font-weight: 100;
 }
 h2{
 	font-family: 'JetBrains Mono', monospace;
@@ -171,10 +174,10 @@ h2{
 blockquote {
 	position: relative;
 	top: 0;
-	font-family: 'Recia', serif;
+	font-family:'Cabinet', sans-serif;
 	margin-block-start: 2.5rem;
-	margin-block-end: 1.5rem;
-	font-weight: 200;
+	margin-block-end: 2.5rem;
+	font-weight: 600;
 	color: black;
 	font-size: 1.3rem;
 	border-block: 1px dotted grey;
@@ -184,31 +187,31 @@ blockquote {
 }
 
 p {
-	font-family: 'Recia', serif;
+	font-family: 'Cabinet', sans-serif;
 	margin-block: 0.5rem;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	color: black;
 	max-width: 100%;
 	padding-inline: 1rem;
 }
 
 .footnotes {
-	border-inline-start: 1px dotted red; 
+	/* border-inline-start: 2px dotted red;  */
 	font-family: 'JetBrains Mono', sans-serif;
-	font-size: 0.5rem;
-	margin-block-start: 0rem;
-	padding: 1rem;
-	margin-block: 1rem;
-	font-size: 0.8rem;
+	font-weight: 100;
+	padding-inline: 3rem;
+	margin-block-end: 1.5rem;
+	margin-block-start: 3rem;
+	font-size: 0.7rem;
 	color: black;
 
 	&>* {
 		font-size: 100%;
-		margin-block-end: 1rem;
+		margin-block-end: 0.25rem;
 	}
 
 	&>*+* {
-		margin-block-start: 0.5rem;
+		margin-block-start: 0rem;
 	}
 }
 
@@ -254,7 +257,7 @@ footer {
 	}
 
 	p {
-		font-family: 'Recia', serif;
+		font-family: 'Cabinet', sans-serif;
 		font-weight: 200;
 		color: black;
 		font-size: 0.8rem;
@@ -265,7 +268,7 @@ footer {
 	}
 
 	a {
-		font-family: 'Recia', serif;
+		font-family: 'Cabinet', sans-serif;
 		font-weight: 200;
 		color: black;
 		font-size: 0.8rem;
@@ -283,15 +286,7 @@ footer {
 
 /* ipad */
 @media screen and (min-width: 768px) {
-	header {
 
-		h1 {
-			max-width: 12ch;
-			font-size: 5rem;
-			text-align: start;
-			padding-inline-start: 0rem;
-		}
-	}
 header {
 		padding-inline-end: 33rem;
 
@@ -371,11 +366,23 @@ header {
 		border: 1px dotted grey;
 		background: white;
 	}
+	p{
+		font-size: 1.3rem;
+	}
 
 	.footnotes {
-		font-size: 0.6rem;
 		font-family: 'JetBrains Mono', sans-serif;
+
+		&>* {
+            font-size: 100%;
+            margin-block-end: 0.25rem;
+        }
+
+        &>*+* {
+            margin-block-start: 0rem;
+        }
 	}
+
 	p {
 		font-size: 0.8rem;
 	}
@@ -431,7 +438,7 @@ header {
 
 
 	header {
-		padding-inline-end: 33rem;
+		padding-inline-end: 27rem;
 
 		h1 {
 			font-size: 4rem;
@@ -471,7 +478,7 @@ header {
 	}
 
 
-	.divider {
+	/* .divider {
 		position: fixed;
 		top: 0;
 		bottom: 0;
@@ -479,13 +486,13 @@ header {
 		width: 1px;
 		background: #d0d0d0;
 		z-index: -1;
-	}
+	} */
 
 	h2 {
 		grid-column: 1;
 		position: sticky;
-		top: 2rem;
-		max-width: 20ch;
+		top: 1rem;
+		max-width: 100%;
 		margin: 0;
 		padding-block-start: 1rem;
 		width: 100%; 
@@ -500,6 +507,9 @@ header {
 		background-color: rgb(255, 255, 255);
 		border: none;
 	}
+	p {
+		font-size: 1rem;
+	}
 
 	p,
 	blockquote,
@@ -513,7 +523,7 @@ header {
 	}
 
 	blockquote {
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 		border: 1px dotted grey;
 		background: white;
 	}
@@ -521,5 +531,14 @@ header {
 	.footnotes {
 		font-size: 0.6rem;
 		font-family: 'JetBrains Mono', sans-serif;
+
+		&>* {
+            font-size: 100%;
+            margin-block-end: 0.25rem;
+        }
+
+        &>*+* {
+            margin-block-start: 0rem;
+        }
 	}
   }
