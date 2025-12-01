@@ -131,7 +131,6 @@ header {
 h1 {
 	font-family: 'JetBrains Mono', sans-serif;
 	text-transform: uppercase;
-	color: rgb(0, 0, 0);
 	font-size: 3.5rem;
 	letter-spacing: 0.1rem;
 	margin-block-start: 1rem;
@@ -440,7 +439,6 @@ header {
 
 
 	header {
-		padding-inline-end: 27rem;
 
 		h1 {
 			font-size: 4rem;
