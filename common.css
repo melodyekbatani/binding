@@ -133,12 +133,12 @@ h1 {
 	font-size: 3.5rem;
 	letter-spacing: 0.1rem;
 	margin-block-start: 1rem;
-	margin-inline-start: 1rem;
+	margin-inline-start: 0rem;
 	font-weight: 700;
 }
 
 .titles {
-	border: 0.5px solid rgb(108, 108, 108);
+	/* border: 0.5px solid rgb(108, 108, 108); */
 	line-height: 1;
 	text-align: left;
 	background-color: white;
@@ -185,7 +185,7 @@ blockquote {
 
 p {
 	font-family: 'Recia', serif;
-	margin-block: 1rem;
+	margin-block: 0.5rem;
 	font-size: 0.8rem;
 	color: black;
 	max-width: 100%;
@@ -193,9 +193,8 @@ p {
 }
 
 .footnotes {
-	border-block: 1px dotted grey; 
+	border-inline-start: 1px dotted red; 
 	font-family: 'JetBrains Mono', sans-serif;
-	text-transform: uppercase;
 	font-size: 0.5rem;
 	margin-block-start: 0rem;
 	padding: 1rem;
@@ -305,7 +304,7 @@ header {
 		}
 		.author-date {
 			font-size: 0.7rem;
-			margin-inline-start: -2rem;
+			margin-inline-start: 0rem;
 		}
 		p {
 			font-size: 0.9rem;
@@ -376,7 +375,6 @@ header {
 	.footnotes {
 		font-size: 0.6rem;
 		font-family: 'JetBrains Mono', sans-serif;
-		text-transform: uppercase;
 	}
 	p {
 		font-size: 0.8rem;
@@ -523,6 +521,5 @@ header {
 	.footnotes {
 		font-size: 0.6rem;
 		font-family: 'JetBrains Mono', sans-serif;
-		text-transform: uppercase;
 	}
   }
