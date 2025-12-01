@@ -1,6 +1,14 @@
 :root {
 	background-color: rgb(255, 255, 255);
 }
+header{
+	background-image:
+		radial-gradient(rgb(0, 0, 0) 1.6px, transparent 0);
+	background-size: 8px 34px;
+	background-position: 0 0;
+	background-color: #ffffff;
+}
+
 @media screen and (min-width: 1400px) {
 .menu {
 			flex-direction: row;
@@ -25,5 +33,9 @@
 					}
 				}
 			}
+		}
+		main {
+			display:grid;
+			
 		}
 	}
