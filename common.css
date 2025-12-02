@@ -79,9 +79,7 @@ nav {
 			margin: 0;
 			padding: 0;
 			text-align: center;
-			border-block-end:2px #ffc79e solid;
-			
-			border-block-end:2px #ffffff solid;;
+			border-block-end:2px #ffffff solid;
 
 			a {
 				padding-block: 1rem 0.5rem;
