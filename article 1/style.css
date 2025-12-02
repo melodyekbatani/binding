@@ -15,23 +15,23 @@
 }
 
 h2{
-		background: #d76d22;
+		background-color: #FFB781;
 		background-color: white;
 		font-size:180%;
 		justify-content: center;
 		color: #424242;
 		padding-top: 25px;
-		border-block-end: 6px #FFB076 solid;
+		border-block-end: 6px #FFB781 solid;
 
 
 	}
 blockquote{
-		background: #fb8b3b;
+		background: #FFB781;
 		background: radial-gradient(circle,rgb(255, 222, 198) 70%, rgb(255, 249, 249) 100%);
 		filter: drop-shadow(3px 3px 5px #d4d1d1);
 		color: #424242;
 		border-radius: 0.25rem;	
-		border-block-start: 6px #fb8b3b solid;
+		border-block-start: 6px #FF9446 solid;
 	}
 h1{
 		color:#FFB076;

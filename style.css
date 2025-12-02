@@ -1,6 +1,40 @@
 :root {
 	background-color: rgb(255, 255, 255);
 }
+
+li {
+				border-block-end:2px #ffffff solid;
+				.row1 {
+				background-color: #FFB781;
+				border-block-end:2px #ffffff solid;
+				}
+				.row0 {
+				background-color: #FF9446;
+				border-block-end:2px #ffffff solid;
+				}
+				.row3 {
+				background-color: #E76200;
+				border-block-end:2px #ffffff solid;
+				}
+				.title{
+				}
+
+				a {
+					color: rgb(0, 0, 0);
+				}
+
+				&.active {
+					border-block-end: 1;
+					background-color: white;
+					filter:saturate(100%);
+					color: rgb(0, 0, 0);
+
+					a{
+						color: black;
+					}
+				}
+			}
+		
 header{ 
 	padding-block-start: -10rem;
 		position: relative;
@@ -63,7 +97,7 @@ header{
 }
 
 h2{
-		background: #fb8b3b;
+		background: #FFB781;
 		background-color: white;
 		font-size:180%;
 		justify-content: center;
@@ -72,18 +106,18 @@ h2{
 		border-block-end: 6px #FFB076 solid;
 	}
 blockquote{
-		background: #fb8b3b;
+		background: #FFB781;
 		background: radial-gradient(circle,rgb(255, 222, 198) 70%, rgb(255, 249, 249) 100%);
 		filter: drop-shadow(3px 3px 5px #d4d1d1);
 		color: #424242;
 		border-radius: 0.25rem;	
-		border-block-start: 6px #fb8b3b solid;
+		border-block-start: 6px #FFE2C4 solid;
 	}
 h1{
 		padding-block-start: -30rem;
-		color:#FFB076;
+		color:#FFE2C4;
 		-webkit-text-stroke-width: 0.5px; 
-        -webkit-text-stroke-color: #FFB076;
+        -webkit-text-stroke-color: #FFE2C4;
 	}
 
 	@media screen and (min-width: 768px) {
@@ -117,33 +151,11 @@ h1{
 			flex-direction: row;
 			flex: 1;
 			height: auto;
-			background-color: #FFB076;
+			background-color: #FFE2C4;
 			
 			
 
-			li {
-				background-color: #FFB076;
-			border-block-end:2px #ffffff solid;
 			
-				.title{
-				}
-
-				a {
-					color: rgb(0, 0, 0);
-				}
-
-				&.active {
-					border-block-end: 1;
-					background-color: white;
-					filter:saturate(100%);
-					color: rgb(0, 0, 0);
-
-					a{
-						color: black;
-					}
-				}
-			}
-		}
 		main {
 			display:grid;
 

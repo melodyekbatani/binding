@@ -2,29 +2,30 @@
 	background-color: rgb(255, 255, 255);
 }
 
+
 h2{
-		background: #fb8b3b;
+		background: #E76200;
 		background-color: white;
 		font-size:180%;
 		justify-content: center;
 		color: #424242;
 		padding-top: 25px;
-		border-block-end: 6px #FFB076 solid;
+		border-block-end: 6px #E76200 solid;
 
 
 	}
 blockquote{
-		background: #fb8b3b;
+		background: #E76200;;
 		background: radial-gradient(circle,rgb(255, 222, 198) 70%, rgb(255, 249, 249) 100%);
 		filter: drop-shadow(3px 3px 5px #d4d1d1);
 		color: #424242;
 		border-radius: 0.25rem;	
-		border-block-start: 6px #fb8b3b solid;
+		border-block-start: 6px #E76200 solid;
 	}
 h1{
-		color:#FFB076;
+		color:#E76200;;
 		-webkit-text-stroke-width: 0.5px; 
-        -webkit-text-stroke-color: #FFB076;
+        -webkit-text-stroke-color: #E76200;
 	}
 
 	@media screen and (min-width: 768px) {
@@ -58,12 +59,12 @@ h1{
 			flex-direction: row;
 			flex: 1;
 			height: auto;
-			background-color: #FFB076;
+			background-color: #E76200;
 			
 			
 
 			li {
-				background-color: #FFB076;
+				background-color: #E76200;
 			border-block-end:2px #ffffff solid;
 			
 				.title{
