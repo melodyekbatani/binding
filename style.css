@@ -2,129 +2,94 @@
 	background-color: rgb(255, 255, 255);
 }
 
-li {
-				border-block-end:2px #ffffff solid;
-				.row1 {
-				background-color: #FFB781;
-				border-block-end:2px #ffffff solid;
-				}
-				.row0 {
-				background-color: #FF9446;
-				border-block-end:2px #ffffff solid;
-				}
-				.row3 {
-				background-color: #E76200;
-				border-block-end:2px #ffffff solid;
-				}
-				.title{
-				}
+header {
+	position: relative;
 
-				a {
-					color: rgb(0, 0, 0);
-				}
+	display: flex;
+	flex-direction: column;
+	/* grid-template-columns: 35vw 1fr; */
+	align-items: start;
 
-				&.active {
-					border-block-end: 1;
-					background-color: white;
-					filter:saturate(100%);
-					color: rgb(0, 0, 0);
+	margin-inline-start: 0;
+	padding-block-start: 3rem;
+	padding-inline: 1rem;
 
-					a{
-						color: black;
-					}
-				}
-			}
-		
-header{ 
-	padding-block-start: -10rem;
-		position: relative;
-		display: grid;
-		grid-template-columns: 35vw 1fr;
-		align-items: start;
+	.author-date {
+		padding-inline: 0;
+		margin-block-start: 1rem;
+		padding-block-start: 0;
 	}
-
-
-	main::before {
-		content: "";
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 35vw;
-		height: 100vh;
-		z-index: -1; 
-	}
-
-
-	/* .divider {
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 35vw;
-		width: 1px;
-		background: #d0d0d0;
-		z-index: -1;
-	} */
 
 	img {
-		grid-column: 1;
+		/* grid-column: 1;
+	grid-row: 1 / -1; */
 		position: sticky;
 		top: 1rem;
 		max-width: 100%;
-		width: 100%; 
+		width: 100%;
 		font-family: 'JetBrains Mono', monospace;
 		font-size: 1.3rem;
 		text-transform: uppercase;
 		letter-spacing: 0.08em;
 		color: black;
 		padding-block-end: 35px;
-		padding-inline-start: 5px;
 	}
 
-
-	.title
-	 {
-		grid-column: 2;
+	.title {
+		/* grid-column: 2;
+	grid-row: 1 / -1; */
 		margin-inline-start: 3rem;
 		margin-inline-end: 3rem;
 		max-width: 40rem;
 		column-count: 1;
 		column-gap: 0;
 	}
+}
 
+
+main::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 35vw;
+	height: 100vh;
+	z-index: -1;
+}
 
 :root {
 	background-color: rgb(255, 255, 255);
 }
 
-h2{
-		background: #FFB781;
-		background-color: white;
-		font-size:180%;
-		justify-content: center;
-		color: #424242;
-		padding-top: 25px;
-		border-block-end: 6px #FFB076 solid;
-	}
-blockquote{
-		background: #FFB781;
-		background: radial-gradient(circle,rgb(255, 222, 198) 70%, rgb(255, 249, 249) 100%);
-		filter: drop-shadow(3px 3px 5px #d4d1d1);
-		color: #424242;
-		border-radius: 0.25rem;	
-		border-block-start: 6px #FFE2C4 solid;
-	}
-h1{
-		padding-block-start: -30rem;
-		color:#FFE2C4;
-		-webkit-text-stroke-width: 0.5px; 
-        -webkit-text-stroke-color: #FFE2C4;
-	}
+h2 {
+	background: #FFB781;
+	background-color: white;
+	font-size: 180%;
+	justify-content: center;
+	color: #424242;
+	padding-top: 25px;
+	border-block-end: 6px #FFB076 solid;
+}
 
-	@media screen and (min-width: 768px) {
-		h2{
-		
-	}
-	}
+blockquote {
+	background: #FFB781;
+	background: radial-gradient(circle, rgb(255, 222, 198) 70%, rgb(255, 249, 249) 100%);
+	filter: drop-shadow(3px 3px 5px #d4d1d1);
+	color: #424242;
+	border-radius: 0.25rem;
+	border-block-start: 6px #FFE2C4 solid;
+}
+
+h1 {
+	padding-block-start: -30rem;
+	color: #FFE2C4;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #FFE2C4;
+}
+
+@media screen and (min-width: 768px) {
+	h2 {}
+}
 
 
 
@@ -133,32 +98,29 @@ h1{
 		radial-gradient(rgb(0, 0, 0) 1.6px, transparent 0);
 	background-size: 8px 34px;
 	background-position: 0 0;
-	background-color: #ffffff; */ 
+	background-color: #ffffff; */
 
 @media screen and (min-width: 1400px) {
-	header{
-		padding-inline-end: 20rem;
+	header {
+		padding-inline-end: 0;
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
-	
+h2 {
+	font-size: 100%;
+	margin-inline-start: 1rem;
+}
 
-	h2{
-		font-size: 100%;
-		margin-inline-start: 1rem;
-	}
 .menu {
-			flex-direction: row;
-			flex: 1;
-			height: auto;
-			background-color: #FFE2C4;
-			
-			
+	flex-direction: row;
+	flex: 1;
+	height: auto;
+	background-color: #FFE2C4;
 
-			
-		main {
-			display:grid;
-
-		}
+	main {
+		display: grid;
 
 	}
+
+}
