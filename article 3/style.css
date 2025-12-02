@@ -3,36 +3,34 @@
 }
 
 
-h2{
-		background: #E76200;
-		background-color: white;
-		font-size:180%;
-		justify-content: center;
-		color: #424242;
-		padding-top: 25px;
-		border-block-end: 6px #E76200 solid;
+h2 {
+	background: #E76200;
+	background-color: white;
+	font-size: 180%;
+	justify-content: center;
+	color: #424242;
+	padding-top: 25px;
+	border-block-end: 6px #E76200 solid;
 
 
-	}
-blockquote{
-		background: #E76200;;
-		background: radial-gradient(circle,rgb(255, 222, 198) 70%, rgb(255, 249, 249) 100%);
-		filter: drop-shadow(3px 3px 5px #d4d1d1);
-		color: #424242;
-		border-radius: 0.25rem;	
-		border-block-start: 6px #E76200 solid;
-	}
-h1{
-		color:#E76200;;
-		-webkit-text-stroke-width: 0.5px; 
-        -webkit-text-stroke-color: #E76200;
-	}
-l
-	@media screen and (min-width: 768px) {
-		h2{
-		
-	}
-	}
+}
+
+blockquote {
+	background: #E76200;
+	background: radial-gradient(circle, rgb(255, 222, 198) 70%, rgb(255, 249, 249) 100%);
+	filter: drop-shadow(3px 3px 5px #d4d1d1);
+	color: #424242;
+	border-radius: 0.25rem;
+	border-block-start: 6px #E76200 solid;
+}
+
+h1 {
+	color: #E76200;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #E76200;
+}
+
+@media screen and (min-width: 768px) {}
 
 
 
@@ -42,54 +40,55 @@ l
 		radial-gradient(rgb(0, 0, 0) 1.6px, transparent 0);
 	background-size: 8px 34px;
 	background-position: 0 0;
-	background-color: #ffffff; */ 
+	background-color: #ffffff; */
 
 @media screen and (min-width: 1400px) {
-	header{
+	header {
 		padding-inline-end: 20rem;
 	}
 
 
-	
 
-	h2{
+
+	h2 {
 		font-size: 100%;
 		margin-inline-start: 1rem;
 	}
-.menu {
-			flex-direction: row;
-			flex: 1;
-			height: auto;
-			background-color: #E76200;
-			
-			
 
-			li {
-				background-color: #E76200;
-			border-block-end:2px #ffffff solid;
-			
-				.title{
-				}
+	.menu {
+		flex-direction: row;
+		flex: 1;
+		height: auto;
+		background-color: #E76200;
+
+
+
+		li {
+			background-color: #E76200;
+			border-block-end: 2px #ffffff solid;
+
+			.title {}
+
+			a {
+				color: rgb(0, 0, 0);
+			}
+
+			&.active {
+				border-block-end: 1;
+				background-color: white;
+				filter: saturate(100%);
+				color: rgb(0, 0, 0);
 
 				a {
-					color: rgb(0, 0, 0);
-				}
-
-				&.active {
-					border-block-end: 1;
-					background-color: white;
-					filter:saturate(100%);
-					color: rgb(0, 0, 0);
-
-					a{
-						color: black;
-					}
+					color: black;
 				}
 			}
 		}
-		main {
-			display:grid;
+	}
 
-		}
+	main {
+		display: grid;
 
 	}
+
+}

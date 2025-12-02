@@ -2,10 +2,12 @@
 	font-family: 'JetBrains Mono';
 	src: url('./media/fonts/JetBrainsMono-Variable.ttf') format('truetype');
 }
+
 @font-face {
 	font-family: 'Recia';
 	src: url('./media/fonts/Recia-Variable.ttf') format('truetype');
 }
+
 @font-face {
 	font-family: 'Cabinet';
 	src: url('./media/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
@@ -124,12 +126,12 @@ nav {
 	}
 }
 
-#menu-toggle-button:checked + .menu {
+#menu-toggle-button:checked+.menu {
 	height: calc(15.5rem + 1px);
 }
 
 @media screen and (min-width: 1400px) {
-	#menu-toggle-button:checked + .menu {
+	#menu-toggle-button:checked+.menu {
 		height: auto;
 	}
 }
@@ -147,7 +149,7 @@ header {
 }
 
 .meta {
-	display:flex;
+	display: flex;
 	justify-content: center;
 	gap: 10rem;
 	width: 100%;
@@ -175,33 +177,36 @@ h1 {
 	color: rgb(0, 0, 0);
 	font-size: 0.8rem;
 	text-decoration: none;
-	font-family:'JetBrains Mono', monospace; 
+	font-family: 'JetBrains Mono', monospace;
 	margin-inline-start: 0rem;
 	font-weight: 100;
 }
-h2{
+
+h2 {
 	font-family: 'JetBrains Mono', monospace;
-		font-size: 1rem;
-		text-transform: uppercase;
-		padding-inline-start:1rem;
-		position: sticky;
-		top: 0;
-		padding-block: 3rem;
-		width: 100%; /* Sets the width to 300 pixels */
-		overflow: hidden;
-  		height: 50px;
-		z-index: 30;
-		letter-spacing: 0.08em;
-		color: rgb(0, 0, 0);
-		border-block-end: 12px #ffffff double;
-		
+	font-size: 1rem;
+	text-transform: uppercase;
+	padding-inline-start: 1rem;
+	position: sticky;
+	top: 0;
+	padding-block: 3rem;
+	width: 100%;
+	/* Sets the width to 300 pixels */
+	overflow: hidden;
+	height: 50px;
+	z-index: 30;
+	letter-spacing: 0.08em;
+	color: rgb(0, 0, 0);
+	border-block-end: 12px #ffffff double;
+
 }
+
 /* body */
 
 blockquote {
 	position: relative;
 	top: 0;
-	font-family:'Cabinet', sans-serif;
+	font-family: 'Cabinet', sans-serif;
 	margin-block-start: 2.5rem;
 	margin-block-end: 2.5rem;
 	font-weight: 600;
@@ -219,7 +224,7 @@ p {
 	color: black;
 	max-width: 100%;
 	padding-inline: 1rem;
-	padding-block:1.5rem;
+	padding-block: 1.5rem;
 	letter-spacing: 0.07rem;
 }
 
@@ -275,14 +280,14 @@ footer {
 	}
 
 	.footer-text {
-	display: grid;
-    grid-template-columns: repeat(3, 1fr);
-	width:100%
-    gap: 1rem;
-    padding: 0;
-    align-items: baseline;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		width: 100%;
+		gap: 1rem;
+		padding: 0;
+		align-items: baseline;
 	}
-	
+
 	p {
 		font-family: 'Cabinet', sans-serif;
 		font-weight: 200;
@@ -290,7 +295,7 @@ footer {
 		font-size: 1rem;
 		text-align: left;
 	}
-	
+
 	a {
 		font-family: 'Cabinet', sans-serif;
 		font-weight: 200;
@@ -309,7 +314,7 @@ footer {
 /* ipad */
 @media screen and (min-width: 768px) {
 
-header {
+	header {
 		padding-inline-end: 33rem;
 
 		h1 {
@@ -319,10 +324,12 @@ header {
 			font-weight: 600;
 			letter-spacing: -0.1rem;
 		}
+
 		.author-date {
 			font-size: 0.7rem;
 			margin-inline-start: 0rem;
 		}
+
 		p {
 			font-size: 0.9rem;
 			padding-block: 0rem;
@@ -344,27 +351,28 @@ header {
 		width: 35vw;
 		height: 100vh;
 		background-color: rgb(255, 255, 255);
-		z-index: -1; 
+		z-index: -1;
 	}
 
 
 
-h2{
-	font-family: 'JetBrains Mono', monospace;
+	h2 {
+		font-family: 'JetBrains Mono', monospace;
 		font-size: 1rem;
 		text-transform: uppercase;
-		padding-inline-start:1rem;
+		padding-inline-start: 1rem;
 		position: sticky;
 		top: 0;
 		padding-block: 3rem;
-		width: 100%; /* Sets the width to 300 pixels */
-  		height: 50px;
+		width: 100%;
+		/* Sets the width to 300 pixels */
+		height: 50px;
 		z-index: 30;
 		letter-spacing: 0.08em;
 		color: rgb(0, 0, 0);
 		padding-inline-start: 1rem;
-		
-}
+
+	}
 
 	p,
 	blockquote,
@@ -379,7 +387,8 @@ h2{
 	blockquote {
 		font-size: 1.3rem;
 	}
-	p{
+
+	p {
 		font-size: 1.3rem;
 	}
 
@@ -387,19 +396,19 @@ h2{
 		font-family: 'JetBrains Mono', sans-serif;
 
 		&>* {
-            font-size: 100%;
-            margin-block-end: 0.25rem;
-        }
+			font-size: 100%;
+			margin-block-end: 0.25rem;
+		}
 
-        &>*+* {
-            margin-block-start: 0rem;
-        }
+		&>*+* {
+			margin-block-start: 0rem;
+		}
 	}
 
 	p {
 		font-size: 0.8rem;
 	}
-  }
+}
 
 @media screen and (min-width: 1400px) {
 	html {
@@ -480,10 +489,12 @@ h2{
 			font-weight: 600;
 			letter-spacing: -0.1rem;
 		}
+
 		.author-date {
 			font-size: 0.7rem;
 			margin-inline-start: -2rem;
 		}
+
 		p {
 			font-size: 0.9rem;
 			padding-block: 0rem;
@@ -506,7 +517,7 @@ h2{
 		left: 0;
 		width: 35vw;
 		height: 100vh;
-		z-index: -1; 
+		z-index: -1;
 	}
 
 
@@ -526,7 +537,7 @@ h2{
 		top: 1rem;
 		max-width: 100%;
 		margin-inline-end: -5rem;
-		width: 100%; 
+		width: 100%;
 		padding-inline-start: -3rem;
 		font-family: 'JetBrains Mono', monospace;
 		font-size: 1.3rem;
@@ -536,6 +547,7 @@ h2{
 		padding-block-end: 35px;
 		padding-inline-start: 5px;
 	}
+
 	p {
 		font-size: 1rem;
 	}
@@ -560,12 +572,12 @@ h2{
 		font-family: 'JetBrains Mono', sans-serif;
 
 		&>* {
-            font-size: 100%;
-            margin-block-end: 0.25rem;
-        }
+			font-size: 100%;
+			margin-block-end: 0.25rem;
+		}
 
-        &>*+* {
-            margin-block-start: 0rem;
-        }
+		&>*+* {
+			margin-block-start: 0rem;
+		}
 	}
-  }
+}
