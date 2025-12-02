@@ -267,6 +267,11 @@ footer {
 	border-block: 12px #ffffff double;
 	background-color: #ffffff;
 
+	svg {
+		width: 100%;
+		overflow: hidden;
+	}
+
 	.footer-title {
 		font-family: 'JetBrains Mono', sans-serif;
 		text-transform: uppercase;
@@ -280,8 +285,8 @@ footer {
 	}
 
 	.footer-text {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		display: flex;
+		flex-direction: row;
 		width: 100%;
 		gap: 1rem;
 		padding: 0;

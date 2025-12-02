@@ -11,6 +11,7 @@ main {
 	align-items: flex-start;
 }
 
+
 header {
 	display: flex;
 	flex-direction: column;
@@ -58,16 +59,19 @@ h1 {
 		flex-direction: row;
 		gap: 1.5rem;
 		padding-inline: 1rem;
+		padding-block: 1rem;
 	}
 
 	.whole-image {
 		position: sticky;
 		top: 0;
-		flex: 3;
+		flex: 4;
+		height: 100%;
+		transform: scaleX(-1);
 	}
 
 	.content {
-		flex: 7;
+		flex: 6;
 	}
 
 	p {
