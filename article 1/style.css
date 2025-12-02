@@ -1,29 +1,82 @@
 :root {
 	background-color: rgb(255, 255, 255);
 }
-/* header {
-	background-image: radial-gradient(rgb(0, 0, 0) 1.5px, rgb(255, 255, 255) 0);
-	background-size: 20px 20px;
-	background-position: 10px 20px;
-} */
- h1{
-		color: #98B9E5;
-        -webkit-text-stroke-width: 0.5px; 
-        -webkit-text-stroke-color: black;
+
+	/* header{
+   /* background-image:
+		radial-gradient(rgba(0, 0, 0) 1px, transparent 0),
+		radial-gradient(rgba(0, 0, 0) 1.5px, transparent 0);
+	background-size: 34px 28px, 22px 20px;
+	background-position: 7px 11px, 19px 3px;
+	background-color: #ffffff; */
+ 
+    :root {
+	background-color: rgb(255, 255, 255);
+}
+
+h2{
+		background: #d76d22;
+		background-color: white;
+		font-size:180%;
+		justify-content: center;
+		color: #424242;
+		padding-top: 25px;
+		border-block-end: 6px #FFB076 solid;
+
+
 	}
-    blockquote{
-        background-color: #98B9E5;
-        color: white;
-    }
+blockquote{
+		background: #fb8b3b;
+		background: radial-gradient(circle,rgb(255, 222, 198) 70%, rgb(255, 249, 249) 100%);
+		filter: drop-shadow(3px 3px 5px #d4d1d1);
+		color: #424242;
+		border-radius: 0.25rem;	
+		border-block-start: 6px #fb8b3b solid;
+	}
+h1{
+		color:#FFB076;
+		-webkit-text-stroke-width: 0.5px; 
+        -webkit-text-stroke-color: #FFB076;
+	}
+
+	@media screen and (min-width: 768px) {
+		h2{
+		
+	}
+	}
+
+
+
+/* header{
+	/* background-image:
+		radial-gradient(rgb(0, 0, 0) 1.6px, transparent 0);
+	background-size: 8px 34px;
+	background-position: 0 0;
+	background-color: #ffffff; */ 
+
 @media screen and (min-width: 1400px) {
+	header{
+		padding-inline-end: 27rem;
+	}
+
+
+	
+
+	h2{
+		font-size: 100%;
+		margin-inline-start: 1rem;
+	}
 .menu {
 			flex-direction: row;
 			flex: 1;
 			height: auto;
-			background-color: #98B9E5;
+			background-color: #FFB076;
+			
 			
 
 			li {
+				background-color: #FFB076;
+			border-block-end:2px #ffffff solid;
 			
 				.title{
 				}
@@ -35,12 +88,18 @@
 				&.active {
 					border-block-end: 1;
 					background-color: white;
+					filter:saturate(100%);
 					color: rgb(0, 0, 0);
 
 					a{
 						color: black;
 					}
 				}
-				}
 			}
 		}
+		main {
+			display:grid;
+
+		}
+
+	}

@@ -1,6 +1,40 @@
 :root {
 	background-color: rgb(255, 255, 255);
 }
+
+h2{
+		background: #fb8b3b;
+		background-color: white;
+		font-size:180%;
+		justify-content: center;
+		color: #424242;
+		padding-top: 25px;
+		border-block-end: 6px #FFB076 solid;
+
+
+	}
+blockquote{
+		background: #fb8b3b;
+		background: radial-gradient(circle,rgb(255, 222, 198) 70%, rgb(255, 249, 249) 100%);
+		filter: drop-shadow(3px 3px 5px #d4d1d1);
+		color: #424242;
+		border-radius: 0.25rem;	
+		border-block-start: 6px #fb8b3b solid;
+	}
+h1{
+		color:#FFB076;
+		-webkit-text-stroke-width: 0.5px; 
+        -webkit-text-stroke-color: #FFB076;
+	}
+
+	@media screen and (min-width: 768px) {
+		h2{
+		
+	}
+	}
+
+
+
 /* header{
 	/* background-image:
 		radial-gradient(rgb(0, 0, 0) 1.6px, transparent 0);
@@ -12,26 +46,25 @@
 	header{
 		padding-inline-end: 20rem;
 	}
-	h1{
-		color: #45A871;
-		-webkit-text-stroke-width: 0.5px; 
-        -webkit-text-stroke-color: black;
-	}
 
-    blockquote{
-        background-color: #45A871;
-		color: white;
-		
-	}
+
 	
+
+	h2{
+		font-size: 100%;
+		margin-inline-start: 1rem;
+	}
 .menu {
 			flex-direction: row;
 			flex: 1;
 			height: auto;
-			background-color: #45A871;
+			background-color: #FFB076;
+			
 			
 
 			li {
+				background-color: #FFB076;
+			border-block-end:2px #ffffff solid;
 			
 				.title{
 				}
@@ -43,6 +76,7 @@
 				&.active {
 					border-block-end: 1;
 					background-color: white;
+					filter:saturate(100%);
 					color: rgb(0, 0, 0);
 
 					a{
