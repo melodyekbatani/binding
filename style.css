@@ -65,13 +65,13 @@ h1 {
 	.whole-image {
 		position: sticky;
 		top: 0;
-		flex: 4;
+		flex: 3;
 		height: 100%;
 		transform: scaleX(-1);
 	}
 
 	.content {
-		flex: 6;
+		flex: 7;
 	}
 
 	p {
