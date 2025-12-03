@@ -39,9 +39,10 @@ nav {
 		justify-content: space-between;
 		align-items: center;
 		height: 3rem;
-		border-block-end: 2px #fca05e solid;
+		border-block-end: 2px #5B5C5C solid;
 		padding: 0.5rem;
 		font-size: 1rem;
+		color: #5B5C5C;
 
 		a {
 			font-size: 1rem;
@@ -52,12 +53,33 @@ nav {
 			text-align: center;
 			left: 2rem;
 			right: 2rem;
-			text-transform: uppercase;
 		}
 
 		.top-bar-toggle-label {
 			cursor: pointer;
 			padding: 0.5rem;
+			margin-left: auto;
+		}
+
+		.hamburger {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: 24px;
+			height: 18px;
+
+			span {
+				display: block;
+				height: 1.5px;
+				background-color: #5B5C5C;
+				border-radius: 1px;
+				transition: all 0.3s ease;
+			}
+		}
+
+
+		#menu-toggle-button {
+			display: none;
 		}
 	}
 
@@ -130,11 +152,17 @@ nav {
 	height: calc(15.5rem + 1px);
 }
 
+#menu-toggle-button {
+	display: none;
+}
+
+
 @media screen and (min-width: 1400px) {
 	#menu-toggle-button:checked+.menu {
 		height: auto;
 	}
 }
+
 
 /* Header */
 
@@ -211,7 +239,7 @@ blockquote {
 	margin-block-end: 2.5rem;
 	font-weight: 600;
 	color: black;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	letter-spacing: 0.01rem;
 	padding: 1rem;
 	margin-inline-end: 0rem;
@@ -220,7 +248,7 @@ blockquote {
 p {
 	font-family: 'Cabinet', sans-serif;
 	margin-block: 0.5rem;
-	font-size: 1rem;
+	font-size: 1.3rem;
 	color: black;
 	max-width: 100%;
 	padding-inline: 1rem;
@@ -268,6 +296,7 @@ footer {
 	svg {
 		width: 100%;
 		overflow: hidden;
+		display: block;
 	}
 
 	.footer-title {
@@ -329,7 +358,7 @@ footer {
 		}
 
 		.author-date {
-			font-size: 0.7rem;
+			font-size: 1rem;
 			margin-inline-start: 0rem;
 		}
 
@@ -382,17 +411,13 @@ footer {
 	.footnotes {
 		margin-inline-start: 1rem;
 		margin-inline-end: 3rem;
-		max-width: 40rem;
+		max-width: 60rem;
 		column-count: 1;
 		column-gap: 0;
 	}
 
 	blockquote {
-		font-size: 1.3rem;
-	}
-
-	p {
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 	}
 
 	.footnotes {
@@ -409,7 +434,7 @@ footer {
 	}
 
 	p {
-		font-size: 0.8rem;
+		font-size: 1.3rem;
 	}
 }
 
