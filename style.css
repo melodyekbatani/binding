@@ -51,7 +51,7 @@ blockquote {
 }
 
 h1 {
-	margin-block-start: -15rem;
+	margin-block-start: -10rem;
 	z-index: 100;
 	font-size: 4rem;
 	background-image: linear-gradient(to right, #f9cc9c, #E76200);
@@ -118,12 +118,13 @@ h1 {
 		h1 {
 			font-size: 5rem;
 			line-height: 0.9;
+			margin-block-start: -20rem;
 		}
 
 
 
 		.content {
-			margin-block-start: 0rem;
+			margin-block-start: -3rem;
 			margin-inline-start: -2rem;
 		}
 	}
