@@ -3,12 +3,21 @@
 }
 
 main {
-	/* grid-template-columns: 35vw 1fr; */
-	position: relative;
+	h1 {
+		font-size: 7rem;
+		color: #E76200;
+	}
 
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+
+	background-image: url(media/image/Type\ try\ 3.gif);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+
 }
 
 
@@ -65,11 +74,11 @@ h1 {
 	.whole-image {
 		position: sticky;
 		top: 0;
-		flex: 3;
+		flex: 2;
 	}
 
 	.content {
-		flex: 7;
+		flex: 8;
 	}
 
 	p {
