@@ -12,6 +12,8 @@ main {
 
 img {
 	margin-block-start: 0rem;
+	width: 90%;
+	overflow: hidden;
 }
 
 header {
