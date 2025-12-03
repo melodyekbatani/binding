@@ -285,6 +285,7 @@ a {
 footer {
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 
 	svg {
 		height: 2rem;
