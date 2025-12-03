@@ -34,7 +34,6 @@ header {
 h2 {
 	background: #FFB781;
 	background-color: white;
-	font-size: 180%;
 	justify-content: center;
 	color: #424242;
 	padding-top: 25px;
@@ -51,7 +50,7 @@ blockquote {
 }
 
 h1 {
-	margin-block-start: -10rem;
+	margin-block-start: -9rem;
 	z-index: 100;
 	font-size: 4rem;
 	background-image: linear-gradient(to right, #f9cc9c, #E76200);
@@ -89,7 +88,7 @@ h1 {
 	}
 
 	.content {
-		margin-block-start: 0;
+		margin-block-start: -2rem;
 		width: 90%;
 
 	}
