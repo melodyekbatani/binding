@@ -128,4 +128,8 @@ h1 {
 		}
 	}
 
+	p {
+		padding-inline: 0rem;
+	}
+
 }
