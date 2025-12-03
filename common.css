@@ -509,7 +509,7 @@ footer {
 		}
 
 		p {
-			padding-inline-start: 0rem;
+			padding-inline-start: 1rem;
 		}
 
 		svg {
@@ -640,10 +640,14 @@ footer {
 
 	footer {
 		p {
-			margin-inline-start: 1.5rem;
+			margin-inline-start: 0rem;
 		}
 
 		.footer-title {
+			padding-inline-start: 1rem;
+		}
+
+		.footer-text {
 			padding-inline-start: 0rem;
 		}
 	}
