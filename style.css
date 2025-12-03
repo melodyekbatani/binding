@@ -11,8 +11,7 @@ main {
 }
 
 img {
-	clip-path: circle(210px at center);
-	margin-block-start: -4rem;
+	margin-block-start: 0rem;
 }
 
 header {
@@ -62,10 +61,9 @@ h1 {
 
 @media screen and (min-width: 768px) {
 	img {
-		scale: 60%;
-		clip-path: circle(350px at center);
-		margin-block-start: -16rem;
-		margin-inline-start: -3rem;
+		margin-block-start: 0rem;
+		margin-inline-start: 5rem;
+		width: 60%;
 	}
 
 
@@ -76,7 +74,7 @@ h1 {
 		padding-block: 1rem;
 
 		h1 {
-			margin-block-start: -30rem;
+			margin-block-start: -15rem;
 			max-width: 8ch;
 			font-size: 6rem;
 		}
@@ -84,11 +82,12 @@ h1 {
 
 	.whole-image {
 		position: relative;
-		width: 100%
+		width: 60%;
+		margin-block-start: 4rem;
 	}
 
 	.content {
-		margin-block-start: -10rem;
+		margin-block-start: 0;
 		width: 90%;
 
 	}
@@ -107,7 +106,12 @@ h1 {
 	}
 
 	main {
-		margin-block-start: -2rem;
+		margin-block-start: 5rem;
+
+		img {
+			margin-block-start: -8rem;
+			width: 60%;
+		}
 
 		h1 {
 			font-size: 5rem;
@@ -115,14 +119,9 @@ h1 {
 		}
 
 
-		img {
-			clip-path: circle(350px at center);
-
-
-		}
 
 		.content {
-			margin-block-start: -15rem;
+			margin-block-start: 0rem;
 			margin-inline-start: -2rem;
 		}
 	}
