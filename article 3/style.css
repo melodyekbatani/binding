@@ -28,6 +28,8 @@ h1 {
 	color: #E76200;
 	-webkit-text-stroke-width: 0.5px;
 	-webkit-text-stroke-color: #E76200;
+	overflow-wrap: normal;
+	hyphens: none;
 }
 
 @media screen and (min-width: 768px) {}
