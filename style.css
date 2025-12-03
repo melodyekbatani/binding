@@ -24,7 +24,7 @@ header {
 	padding-inline: 1rem;
 
 	.author-date {
-		padding-inline: 0;
+		padding-inline: 1rem;
 		margin-block-start: 1rem;
 		padding-block-start: 0;
 	}
@@ -62,55 +62,69 @@ h1 {
 
 @media screen and (min-width: 768px) {
 	img {
-		clip-path: circle(120px at center);
-		margin-block-start: 0rem;
+		scale: 60%;
+		clip-path: circle(350px at center);
+		margin-block-start: -16rem;
+		margin-inline-start: -3rem;
 	}
 
 
 	main {
-		flex-direction: row;
-		gap: 1.5rem;
+		flex-direction: column;
+		gap: 0rem;
 		padding-inline: 1rem;
 		padding-block: 1rem;
-	}
 
-	h1 {
-		margin-block-start: 12rem;
+		h1 {
+			margin-block-start: -30rem;
+			max-width: 8ch;
+			font-size: 6rem;
+		}
 	}
 
 	.whole-image {
-		position: sticky;
-		top: 0;
-		flex: 4;
+		position: relative;
+		width: 100%
 	}
 
 	.content {
-		flex: 6;
+		margin-block-start: -10rem;
+		width: 90%;
+
 	}
 
-	p {
-		margin-inline-start: 0rem;
-	}
 
-	nav {
-		position: sticky;
-	}
 }
 
 
 @media screen and (min-width: 1400px) {
 	header {
 		padding-inline-end: 0;
-		grid-template-columns: 1fr 1fr;
 
 		.author-date {
 			margin-inline-start: 0;
 		}
-
 	}
 
-	img {
-		clip-path: circle(250px at center);
+	main {
+		margin-block-start: -2rem;
+
+		h1 {
+			font-size: 5rem;
+			line-height: 0.9;
+		}
+
+
+		img {
+			clip-path: circle(350px at center);
+
+
+		}
+
+		.content {
+			margin-block-start: -15rem;
+			margin-inline-start: -2rem;
+		}
 	}
 
 }
