@@ -300,7 +300,7 @@ footer {
 		margin-block-end: -3rem;
 		color: #5B5C5C;
 		font-size: 2rem;
-		padding-inline-start: 0rem;
+		padding-inline-start: 1rem;
 		text-align: left;
 		max-width: 20ch;
 	}
@@ -639,6 +639,10 @@ footer {
 	footer {
 		p {
 			margin-inline-start: 1.5rem;
+		}
+
+		.footer-title {
+			padding-inline-start: 0rem;
 		}
 	}
 }
