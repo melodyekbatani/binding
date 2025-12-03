@@ -15,6 +15,7 @@
 
 :root {
 	background-color: white;
+	--monospace-font: 'JetBrains Mono', monospace;
 }
 
 html {
@@ -31,7 +32,7 @@ body {
 nav {
 	display: flex;
 	flex-direction: column;
-	font-family: 'JetBrains Mono', monospace;
+	font-family: var(--monospace-font);
 
 	.top-bar {
 		position: relative;
@@ -58,7 +59,7 @@ nav {
 		.top-bar-toggle-label {
 			cursor: pointer;
 			padding: 0.5rem;
-			margin-left: auto;
+			margin-inline-start: auto;
 		}
 
 		.hamburger {
@@ -76,15 +77,6 @@ nav {
 				transition: all 0.3s ease;
 			}
 		}
-
-
-		#menu-toggle-button {
-			display: none;
-		}
-	}
-
-	#menu-toggle-button {
-		display: none;
 	}
 
 	.menu {
@@ -115,22 +107,18 @@ nav {
 
 			&.row0 {
 				background-color: #ffdcc2;
-				border-block-end: 2px #ffffff solid;
 			}
 
 			&.row1 {
 				background-color: #FFB781;
-				border-block-end: 2px #ffffff solid;
 			}
 
 			&.row2 {
 				background-color: #FF9446;
-				border-block-end: 2px #ffffff solid;
 			}
 
 			&.row3 {
 				background-color: #E76200;
-				border-block-end: 2px #ffffff solid;
 			}
 
 			.title {
@@ -141,8 +129,7 @@ nav {
 
 			.author-date {
 				font-size: 0.6rem;
-				text-decoration: none;
-				font-family: 'JetBrains Mono', monospace;
+				font-family: var(--monospace-font);
 				text-align: center;
 				font-weight: 100;
 			}
@@ -169,11 +156,11 @@ nav {
 /* Header */
 
 header {
-	padding-block-start: 11rem;
 	display: flex;
 	flex-direction: row;
 	margin-block-start: 0rem;
 	margin-inline-start: 1rem;
+	padding-block-start: 11rem;
 	padding-block-end: 2rem;
 	text-align: right;
 }
@@ -187,12 +174,13 @@ header {
 
 
 h1 {
-	font-family: 'JetBrains Mono', sans-serif;
+	margin-block-start: 1rem;
+	margin-inline-start: 0rem;
+
+	font-family: var(--monospace-font);
 	text-transform: uppercase;
 	font-size: 3.5rem;
 	letter-spacing: 0.1rem;
-	margin-block-start: 1rem;
-	margin-inline-start: 0rem;
 	font-weight: 700;
 }
 
@@ -206,14 +194,13 @@ h1 {
 .author-date {
 	color: rgb(0, 0, 0);
 	font-size: 0.8rem;
-	text-decoration: none;
-	font-family: 'JetBrains Mono', monospace;
+	font-family: var(--monospace-font);
 	margin-inline-start: 0rem;
 	font-weight: 100;
 }
 
 h2 {
-	font-family: 'JetBrains Mono', monospace;
+	font-family: var(--monospace-font);
 	font-size: 1.5rem;
 	text-transform: uppercase;
 	padding-inline-start: 1rem;
@@ -260,7 +247,7 @@ p {
 
 .footnotes {
 	/* border-inline-start: 2px dotted red;  */
-	font-family: 'JetBrains Mono', sans-serif;
+	font-family: var(--monospace-font);
 	font-weight: 100;
 	padding-inline: 3rem;
 	margin-block-end: 1.5rem;
@@ -305,7 +292,7 @@ footer {
 	}
 
 	.footer-title {
-		font-family: 'JetBrains Mono', sans-serif;
+		font-family: var(--monospace-font);
 		text-transform: uppercase;
 		font-weight: 700;
 		margin-block-end: -3rem;
@@ -395,7 +382,7 @@ footer {
 				.author-date {
 					font-size: 0.6rem;
 					text-decoration: none;
-					font-family: 'JetBrains Mono', monospace;
+					font-family: var(--monospace-font);
 					text-align: center;
 					font-weight: 100;
 				}
@@ -414,6 +401,10 @@ footer {
 
 				}
 			}
+		}
+
+		#menu-toggle-button:checked+.menu {
+			height: auto;
 		}
 	}
 
@@ -460,7 +451,7 @@ footer {
 
 
 	h2 {
-		font-family: 'JetBrains Mono', monospace;
+		font-family: var(--monospace-font);
 		font-size: 1rem;
 		text-transform: uppercase;
 		padding-inline-start: 1rem;
@@ -492,7 +483,7 @@ footer {
 	}
 
 	.footnotes {
-		font-family: 'JetBrains Mono', sans-serif;
+		font-family: var(--monospace-font);
 
 		&>* {
 			font-size: 100%;
@@ -601,7 +592,7 @@ footer {
 		margin-inline-end: -5rem;
 		width: 100%;
 		padding-inline-start: -3rem;
-		font-family: 'JetBrains Mono', monospace;
+		font-family: var(--monospace-font);
 		font-size: 1.3rem;
 		text-transform: uppercase;
 		letter-spacing: 0.08em;
@@ -631,7 +622,7 @@ footer {
 
 	.footnotes {
 		font-size: 0.6rem;
-		font-family: 'JetBrains Mono', sans-serif;
+		font-family: var(--monospace-font);
 
 		&>* {
 			font-size: 100%;
