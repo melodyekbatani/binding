@@ -454,7 +454,7 @@ footer {
 
 	h2 {
 		font-family: var(--monospace-font);
-		font-size: 1rem;
+		font-size: 2rem;
 		text-transform: uppercase;
 		padding-inline-start: 1rem;
 		position: sticky;
@@ -595,11 +595,11 @@ footer {
 		width: 100%;
 		padding-inline-start: -3rem;
 		font-family: var(--monospace-font);
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 		text-transform: uppercase;
-		letter-spacing: 0.08em;
+		letter-spacing: 0.008em;
 		color: black;
-		padding-block-end: 35px;
+		padding-block-end: 50px;
 		padding-inline-start: 5px;
 	}
 
