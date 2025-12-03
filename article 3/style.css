@@ -6,7 +6,6 @@
 h2 {
 	background: #E76200;
 	background-color: white;
-	font-size: 180%;
 	justify-content: center;
 	color: #424242;
 	padding-top: 25px;
@@ -53,7 +52,7 @@ h1 {
 
 
 	h2 {
-		font-size: 100%;
+		font-size: 180%;
 		margin-inline-start: 1rem;
 	}
 
