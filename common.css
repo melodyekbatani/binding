@@ -4,11 +4,6 @@
 }
 
 @font-face {
-	font-family: 'Recia';
-	src: url('./media/fonts/Recia-Variable.ttf') format('truetype');
-}
-
-@font-face {
 	font-family: 'Cabinet';
 	src: url('./media/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
 }
@@ -28,7 +23,7 @@ body {
 	color: black;
 }
 
-/* nav */
+/* main website navigation - this is something I worked on with my code totur Hoesok. I also intergrated the mobile hamburger menu that is similar to something Cason taught me while we were working on project 2*/
 nav {
 	display: flex;
 	flex-direction: column;
@@ -80,6 +75,7 @@ nav {
 				background-color: #5B5C5C;
 				border-radius: 1px;
 				transition: all 0.3s ease;
+				/* This makes the menu close smoothly, you can find more on this here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition */
 			}
 		}
 	}
@@ -94,7 +90,7 @@ nav {
 		transition: height 0.5s;
 		will-change: height;
 		margin-block-start: 0rem;
-		/* helps with gif performance on mobile */
+		/* will-change helps with gif performance on mobile, it's not ideal but my gif is pretty big since I wanted it to have many frames. I learnt this from Hoesok, but I also found some research on this on mdn https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/will-change */
 
 		li {
 			display: flex;
@@ -164,8 +160,6 @@ nav:has(#menu-toggle-button:checked) .hamburger span:nth-child(3) {
 	display: none;
 }
 
-
-
 @media screen and (min-width: 1400px) {
 	#menu-toggle-button:checked+.menu {
 		height: auto;
@@ -205,7 +199,6 @@ h1 {
 }
 
 .titles {
-	/* border: 0.5px solid rgb(108, 108, 108); */
 	line-height: 1;
 	text-align: left;
 	margin-inline-end: 2rem;
@@ -229,7 +222,7 @@ h2 {
 	top: 0;
 	padding-block: 3rem;
 	width: 100%;
-	/* Sets the width to 300 pixels */
+	/* Sets the width to 300 pixels for mobile */
 	overflow: hidden;
 	height: 50px;
 	z-index: 30;
@@ -239,8 +232,7 @@ h2 {
 
 }
 
-/* body */
-
+/* body text */
 blockquote {
 	position: relative;
 	top: 0;
@@ -268,15 +260,15 @@ p {
 }
 
 .footnotes {
-	/* border-inline-start: 2px dotted red;  */
 	font-family: var(--monospace-font);
 	font-weight: 100;
 	padding-inline: 3rem;
 	margin-block-end: 1.5rem;
 	margin-block-start: 3rem;
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	color: black;
 
+	/* This sets the margin after my final footnote for that section*/
 	&>* {
 		font-size: 100%;
 		margin-block-end: 0.25rem;
@@ -292,7 +284,7 @@ figure {
 }
 
 sup {
-	font-size: 0.5rem;
+	font-size: 0.8rem;
 	vertical-align: super;
 }
 
@@ -358,7 +350,7 @@ footer {
 	}
 }
 
-/* ipad */
+/* for middle media queury - ipad */
 @media screen and (min-width: 768px) {
 	nav {
 		flex-direction: row;
@@ -460,7 +452,6 @@ footer {
 		align-items: start;
 	}
 
-
 	main::before {
 		content: "";
 		position: fixed;
@@ -473,7 +464,6 @@ footer {
 	}
 
 
-
 	h2 {
 		font-family: var(--monospace-font);
 		font-size: 2rem;
@@ -483,7 +473,6 @@ footer {
 		top: 0;
 		padding-block: 3rem;
 		width: 100%;
-		/* Sets the width to 300 pixels */
 		height: 50px;
 		z-index: 30;
 		letter-spacing: 0.08em;
@@ -596,17 +585,6 @@ footer {
 		height: 100vh;
 		z-index: -1;
 	}
-
-
-	/* .divider {
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 35vw;
-		width: 1px;
-		background: #d0d0d0;
-		z-index: -1;
-	} */
 
 	h2 {
 		grid-column: 1;

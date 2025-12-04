@@ -1,4 +1,5 @@
 :root {
+	/* I need this to hide the rest of the svg on mobile and middle breakpoints */
 	overflow-x: hidden;
 }
 
@@ -11,36 +12,25 @@ main {
 
 img {
 	width: 90%;
-	overflow: hidden;
 	align-items: center;
 	margin-block-start: -2rem;
-	border: 1px #727272 solid;
-	border-radius: 50%;
 }
 
 header {
-	display: flex;
-	text-align: center;
 	flex-direction: column;
 	margin-inline-start: 0;
 	padding-block-start: 7rem;
 	padding-block-end: 0rem;
 	padding-inline: 1rem;
 	align-items: center;
-
-	.author-date {
-		padding-inline: 1rem;
-		margin-block-start: 1rem;
-		padding-block-start: 0;
-	}
 }
 
 h2 {
-	background: #FFB781;
-	background-color: white;
 	color: #424242;
-	padding-top: 25px;
-	border-block-end: 6px #FFB076 solid;
+	font-size: 1.3rem;
+	padding-inline: 1.5rem;
+	padding-block: 1rem;
+	border-block: 0px;
 }
 
 blockquote {
@@ -56,7 +46,7 @@ h1 {
 	z-index: 100;
 	font-size: 3rem;
 	line-height: 90%;
-	text-align: center;
+	text-align: left;
 	background-image: linear-gradient(to right, #f9cc9c, #E76200);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -67,61 +57,52 @@ h1 {
 
 @media screen and (min-width: 768px) {
 	img {
-		margin-block-start: 0rem;
-		margin-inline-start: 5rem;
-		width: 60%;
+		margin-block-start: -2rem;
+		width: 50%;
 	}
 
+	header {
+		h1 {
+			margin-block-start: -25rem;
+			font-size: 9rem;
+			max-width: 10ch;
+			text-align: center;
+		}
+	}
+
+	h2 {
+		color: #424242;
+		font-size: 2rem;
+		padding-inline: 1.5rem;
+		text-align: center;
+		margin-block-start: 0rem;
+		overflow: visible;
+	}
 
 	main {
 		flex-direction: column;
 		gap: 0rem;
 		padding-inline: 1rem;
-		padding-block: 1rem;
+		padding-block: -1rem;
 
-		h1 {
-			margin-block-start: -15rem;
-			font-size: 6rem;
+
+		.content {
+			margin-block-start: 6rem;
+			width: 90%;
 		}
-	}
-
-
-	.content {
-		margin-block-start: -2rem;
-		width: 90%;
 	}
 }
 
-
 @media screen and (min-width: 1400px) {
-	header {
-		padding-inline-end: 0;
-
-		.author-date {
-			margin-inline-start: 0;
-		}
-	}
-
 	main {
-		margin-block-start: 5rem;
-
-		img {
-			margin-block-start: -8rem;
-			width: 60%;
-		}
-
 		h1 {
 			font-size: 5rem;
 			line-height: 0.9;
 		}
 
 		.content {
-			margin-block-start: -3rem;
 			margin-inline-start: -2rem;
+			margin-block-start: 8rem;
 		}
-	}
-
-	p {
-		padding-inline: 0rem;
 	}
 }
