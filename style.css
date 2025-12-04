@@ -1,3 +1,7 @@
+:root {
+	overflow-x: hidden;
+}
+
 main {
 	/* grid-template-columns: 35vw 1fr; */
 	position: relative;
