@@ -17,21 +17,138 @@ blockquote {
 }
 
 h1 {
+	margin-block-start: -4rem;
 	color: #E76200;
 	overflow-wrap: normal;
 	hyphens: none;
+	line-height: 110%;
+	letter-spacing: 0.9;
+
+
+	span:nth-child(4n) {
+	position: relative;
+	top: -1px;
+	}
+
+	span:nth-child(4n + 1) {
+	position: relative;
+	top: -2px;
+	}
+
+	span:nth-child(4n + 2) {
+	position: relative;
+	top: -3px;
+	}
+
+	span:nth-child(4n + 3) {
+	position: relative;
+	top: -4px;
+	}
+	}
+	.titles .author-date {
+    position: absolute;
+    top: 0;
+    left: 0;
+	text-align: left;
 }
+	.group1-desktop,
+    .group2-desktop {
+        display: inline; 
+    }
 
 sup {
 	color: #E76200;
 }
+
+
+main { 
+	.author-date {
+	margin-block-start: -3rem;
+		font-size: 1rem;
+		font-family: var(--monospace-font);
+		font-weight: 100;
+}
+} 
+
+@media screen and (min-width: 760px) {
+	h1 {
+	color: #E76200;
+	overflow-wrap: normal;
+	hyphens: none;
+	line-height: 120%;
+
+	span:nth-child(4n) {
+	position: relative;
+	top: -2px;
+	}
+
+	span:nth-child(4n + 1) {
+	position: relative;
+	top: -4px;
+	}
+
+	span:nth-child(4n + 2) {
+	position: relative;
+	top: -6px;
+	}
+
+	span:nth-child(4n + 3) {
+	position: relative;
+	top: -8px;
+	}
+	.group1-desktop,
+    .group2-desktop {
+        display: block; 
+    }
+
+	}
+	main { 
+	.author-date {
+			font-size: 1rem;
+			margin-inline-start: 0rem;
+		}
+	}
+}
+
 
 @media screen and (min-width: 1400px) {
 	header {
 		padding-inline-end: 20rem;
 	}
 
+h1 {
 
+	color: #E76200;
+	overflow-wrap: normal;
+	hyphens: none;
+	line-height: 130%;
+
+	span:nth-child(4n) {
+	position: relative;
+	top: -4px;
+	}
+
+	span:nth-child(4n + 1) {
+	position: relative;
+	top: -8px;
+	}
+
+	span:nth-child(4n + 2) {
+	position: relative;
+	top: -12px;
+	}
+
+	span:nth-child(4n + 3) {
+	position: relative;
+	top: -16px;
+	}
+
+	.group1-desktop,
+    .group2-desktop {
+        display: block; 
+    }
+
+	}
 
 
 	h2 {
@@ -49,8 +166,6 @@ sup {
 		li {
 			background-color: #E76200;
 			border-block-end: 2px #ffffff solid;
-
-			.title {}
 
 			a {
 				color: rgb(0, 0, 0);
@@ -71,5 +186,10 @@ sup {
 
 	main {
 		display: grid;
+
+		.author-date {
+			font-size: 0.7rem;
+			margin-inline-start: -2rem;
+		}
 	}
 }
