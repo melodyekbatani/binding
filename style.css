@@ -3,30 +3,30 @@
 }
 
 main {
-	/* grid-template-columns: 35vw 1fr; */
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 }
 
-.whole-image {
-	position: relative;
-}
-
 img {
-	margin-block-start: 3rem;
-	width: 80%;
+	width: 90%;
 	overflow: hidden;
+	align-items: center;
+	margin-block-start: -2rem;
+	border: 1px #727272 solid;
+	border-radius: 50%;
 }
 
 header {
 	display: flex;
+	text-align: center;
 	flex-direction: column;
 	margin-inline-start: 0;
 	padding-block-start: 7rem;
 	padding-block-end: 0rem;
 	padding-inline: 1rem;
+	align-items: center;
 
 	.author-date {
 		padding-inline: 1rem;
@@ -38,7 +38,6 @@ header {
 h2 {
 	background: #FFB781;
 	background-color: white;
-	justify-content: center;
 	color: #424242;
 	padding-top: 25px;
 	border-block-end: 6px #FFB076 solid;
@@ -54,14 +53,16 @@ blockquote {
 }
 
 h1 {
-	margin-block-start: -9rem;
 	z-index: 100;
-	font-size: 4rem;
+	font-size: 3rem;
+	line-height: 90%;
+	text-align: center;
 	background-image: linear-gradient(to right, #f9cc9c, #E76200);
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
 	-webkit-text-fill-color: transparent;
+	margin-block-start: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -80,24 +81,15 @@ h1 {
 
 		h1 {
 			margin-block-start: -15rem;
-			max-width: 8ch;
 			font-size: 6rem;
 		}
 	}
 
-	.whole-image {
-		position: relative;
-		width: 60%;
-		margin-block-start: 4rem;
-	}
 
 	.content {
 		margin-block-start: -2rem;
 		width: 90%;
-
 	}
-
-
 }
 
 
@@ -121,10 +113,7 @@ h1 {
 		h1 {
 			font-size: 5rem;
 			line-height: 0.9;
-			margin-block-start: -20rem;
 		}
-
-
 
 		.content {
 			margin-block-start: -3rem;
@@ -135,5 +124,4 @@ h1 {
 	p {
 		padding-inline: 0rem;
 	}
-
 }
