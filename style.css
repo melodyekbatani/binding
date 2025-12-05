@@ -13,7 +13,7 @@ header.homepage {
 	text-align: center;
 	padding: 1rem;
 	margin-inline-start: 0rem;
-	
+
 img {
 	position: relative;
 	width: 76%;
@@ -31,7 +31,6 @@ img {
 	width: 100%;
 	z-index: 10;
 	padding: 0 20px;
-	box-sizing: border-box;
 	margin: 0;
 }
 
@@ -48,7 +47,7 @@ img {
 	font-size: 1rem;
 	text-align: center;
 	border: none;
-	color: black;
+	color: #E76200;
 	padding: 0;
 	position: relative;
 	top: auto;
