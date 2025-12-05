@@ -7,15 +7,6 @@ HTML and CSS
 https://melodyekbatani.github.io/binding/
 
 ## Overview
-# Binding
-
-### Tools
-HTML and CSS 
-
-### Link
-https://melodyekbatani.github.io/binding/
-
-## Overview
 Binding is a collection of readings design and developed using HTML and CSS and my first complete, responsive full website project. This project brings together three key readings that frame typography as an organizing principle rather than an expressive stylistic layer to design. This site explores typography as a guiding principle.
 
 ## Context
