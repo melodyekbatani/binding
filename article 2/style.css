@@ -5,6 +5,7 @@ h2 {
 	color: #424242;
 	padding-top: 25px;
 	border-block-end: 6px #FF8933 solid;
+	position: sticky;
 }
 
 sup {
@@ -27,9 +28,9 @@ h1 {
 	overflow-wrap: normal;
 	display: flex;
   	flex-wrap: wrap;
-  	gap: 30px;
-	line-height: 70%;
+	line-height: 110%;
 	padding-block-end: 2rem;
+	letter-spacing: 0.3rem;
 
 	span {
 		/* allowing a slight rotation to work on inline caracters since the letters in this are not blocks */
@@ -41,23 +42,34 @@ h1 {
 
 	span:nth-child(4n) {
 	position: relative;
-	transform: rotate(4deg);
+	transform: rotate(1deg);
 	}
 
 	span:nth-child(4n + 1) {
 	position: relative;
-	transform: rotate(8deg);
+	transform: rotate(2deg);
 	}
 
 	span:nth-child(4n + 2) {
 	position: relative;
-	transform: rotate(12deg);
+	transform: rotate(3deg);
 	}
 
 	span:nth-child(4n + 3) {
 	position: relative;
-	transform: rotate(24deg);
+	transform: rotate(15deg);
 	}
+	.group2-desktop {
+	display: flex; 
+	gap: 20px; 
+	flex-basis: 100%;  /* my tutor reccomended this to make sure of sand is on the same line on desktop  */
+	}
+}
+@media screen and (min-width: 340px) and (max-width: 759px){
+	h1 { 
+			gap: 10px;
+	}
+
 	.group1-desktop { 
 	display: flex;
 	gap: 20px;
@@ -69,7 +81,27 @@ h1 {
 	flex-basis: 100%;  /* my tutor reccomended this to make sure of sand is on the same line on desktop  */
 	}
 }
+@media screen and (min-width: 760px) {
+	h1 { 
+			gap: 10px;
+			letter-spacing: 1rem;
+	}
+		.group1-desktop, .group2-desktop {
+		letter-spacing: 0.4rem;
+	}
 
+	.group1-desktop { 
+	display: flex;
+	gap: 20px;
+	flex-basis: 100%; 
+	}
+	.group2-desktop {
+	display: flex; 
+	gap: 20px; 
+	flex-basis: 100%;  /* my tutor reccomended this to make sure of sand is on the same line on desktop  */
+	}
+	
+}
 @media screen and (min-width: 1400px) {
 	header {
 		padding-inline-end: 27rem;

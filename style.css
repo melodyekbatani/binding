@@ -1,108 +1,73 @@
 :root {
 	/* I need this to hide the rest of the svg on mobile and middle breakpoints */
-	overflow-x: hidden;
+	overflow-x: hidden; 
 }
-
-main {
+/* I needed to add very specific selectors here. My website kept picking up code from common.css which didn't let me center the image */
+header.homepage {
 	position: relative;
+	width: 100%;
+	margin-block-start: 3rem; 
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 1rem;
+	margin-inline-start: 0rem;
+	
 img {
-	width: 90%;
-	align-items: center;
-	margin-block-start: -2rem;
+	position: relative;
+	width: 76%;
+	max-height: 60vh;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	opacity: 0.5;
+}
+.title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	z-index: 10;
+	padding: 0 20px;
+	box-sizing: border-box;
+	margin: 0;
 }
 
-header {
-	flex-direction: column;
+.title h1 {
+	font-weight: 700;
+	margin: 0;
+	text-align: center;
+	padding: 0;
 	margin-inline-start: 0;
-	padding-block-start: 7rem;
-	padding-block-end: 0rem;
-	padding-inline: 1rem;
-	align-items: center;
+	color: #E76200;
 }
-
-h2 {
-	color: #424242;
-	font-size: 1.3rem;
-	padding-inline: 1.5rem;
-	padding-block: 1rem;
-	border-block: 0px;
+.title h2 {
+	margin: 0;
+	font-size: 1rem;
+	text-align: center;
+	border: none;
+	color: black;
+	padding: 0;
+	position: relative;
+	top: auto;
+	border: none;
+	height: auto;
+	width: auto;
 }
-
-blockquote {
-	background: #FFB781;
-	background: radial-gradient(circle, rgb(255, 222, 198) 70%, rgb(255, 249, 249) 100%);
-	filter: drop-shadow(3px 3px 5px #d4d1d1);
-	color: #424242;
-	border-radius: 0.25rem;
-	border-block-start: 6px #FFE2C4 solid;
-}
-
-h1 {
-	z-index: 100;
-	font-size: 3rem;
-	line-height: 90%;
-	text-align: left;
-	background-image: linear-gradient(to right, #f9cc9c, #E76200);
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
-	-webkit-text-fill-color: transparent;
-	margin-block-start: 2rem;
 }
 
 @media screen and (min-width: 768px) {
-	img {
-		margin-block-start: -2rem;
-		width: 50%;
-	}
-
-	header {
-		h1 {
-			margin-block-start: -25rem;
-			font-size: 9rem;
-			max-width: 10ch;
-			text-align: center;
-		}
-	}
-
-	h2 {
-		color: #424242;
-		font-size: 2rem;
-		padding-inline: 1.5rem;
-		text-align: center;
-		margin-block-start: 0rem;
-		overflow: visible;
-	}
-
-	main {
-		flex-direction: column;
-		gap: 0rem;
-		padding-inline: 1rem;
-		padding-block: -1rem;
-
-
-		.content {
-			margin-block-start: 6rem;
-			width: 90%;
-		}
+	header.homepage img {
+		max-width: 500px;
+		width: 100%;
 	}
 }
 
 @media screen and (min-width: 1400px) {
-	main {
-		h1 {
-			font-size: 5rem;
-			line-height: 0.9;
-		}
-
-		.content {
-			margin-inline-start: -2rem;
-			margin-block-start: 8rem;
-		}
+	header.homepage img {
+		max-width: 600px;
+		width: 100%;
 	}
 }

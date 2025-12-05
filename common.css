@@ -173,6 +173,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	margin-block-start: 0rem;
+	margin-block-end: -1rem;
 	margin-inline-start: 1rem;
 	padding-block-start: 11rem;
 	padding-block-end: 2rem;
@@ -193,7 +194,7 @@ h1 {
 
 	font-family: var(--monospace-font);
 	text-transform: uppercase;
-	font-size: 3rem;
+	font-size: 2.6rem;
 	letter-spacing: 0.1rem;
 	font-weight: 600;
 }
@@ -427,7 +428,7 @@ footer {
 		padding-inline-end: 33rem;
 
 		h1 {
-			font-size: 4rem;
+			font-size: 5rem;
 			text-align: start;
 			padding-inline-start: 0rem;
 			font-weight: 600;

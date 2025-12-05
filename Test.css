@@ -1,0 +1,196 @@
+:root {
+	/* I need this to hide the rest of the svg on mobile and middle breakpoints */
+	overflow-x: hidden;
+}
+
+main {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+img {
+	width: 80%;
+	align-items: center;
+	margin-block-start: -2rem;
+}
+
+header {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+h2 {
+	color: #424242;
+	font-size: 1.3rem;
+	padding-inline: 1.5rem;
+	padding-block: 1rem;
+	border-block: 0px;
+}
+
+blockquote {
+	background: #FFB781;
+	background: radial-gradient(circle, rgb(255, 222, 198) 70%, rgb(255, 249, 249) 100%);
+	filter: drop-shadow(3px 3px 5px #d4d1d1);
+	color: #424242;
+	border-radius: 0.25rem;
+	border-block-start: 6px #FFE2C4 solid;
+}
+
+h1 {
+	z-index: 100;
+	font-size: 3rem;
+	line-height: 90%;
+	text-align: left;
+	background-image: linear-gradient(to right, #f9cc9c, #E76200);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	-webkit-text-fill-color: transparent;
+	margin-block-start: 2rem;
+}
+
+.homepage-menu {
+	padding-block-start: 2rem;
+	
+li {
+			display: flex;
+			flex-direction: column;
+			gap: 0.25rem;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			border-block-end: 2px #ffffff solid;
+			font-family: var(--monospace-font);
+			overflow: hidden;
+
+			a {
+				padding-block: 2rem 1.5rem;
+				text-decoration: none;
+				color: black;
+			}
+
+			&.row1 {
+				background-color: #FFB781;
+			}
+
+			&.row2 {
+				background-color: #FF9446;
+			}
+
+			&.row3 {
+				background-color: #E76200;
+			}
+
+			.title {
+				font-size: 1.3rem;
+				text-transform: uppercase;
+				text-align: center;
+			}
+
+			.author-date {
+				font-size: 0.9rem;
+				font-family: var(--monospace-font);
+				text-align: center;
+				font-weight: 100;
+			}
+			}
+		}
+
+@media screen and (min-width: 768px) {
+	img {
+		margin-block-start: -2rem;
+		width: 50%;
+	}
+
+	header {
+		h1 {
+			margin-block-start: -25rem;
+			font-size: 9rem;
+			max-width: 10ch;
+			text-align: center;
+		}
+	}
+
+	h2 {
+		color: #424242;
+		font-size: 2rem;
+		padding-inline: 1.5rem;
+		text-align: center;
+		margin-block-start: 0rem;
+		overflow: visible;
+	}
+
+	main {
+		.content {
+			flex-direction: column;
+			gap: 0rem;
+			padding-inline: 1rem;
+			padding-block: -1rem;
+			margin-block-start: 6rem;
+			width: 90%;
+		}
+	}
+}
+	.homepage-menu {
+			width: 100%;
+			display: flex;
+			flex: 1;
+			height: auto;
+			color: black;
+			flex-direction: row;
+			align-items: center;
+			margin-block-start: 0rem;
+
+		li {
+			&.row1 {
+				Border-inline-start: none;
+			}
+
+				flex: 1;
+				border-inline-start: 12px rgb(255, 255, 255) double;
+				text-align: start;
+				color: black;
+
+
+				.title {
+					font-size: 0.9rem;
+					text-transform: uppercase;
+					text-align: center;
+				}
+
+				.author-date {
+					font-size: 0.6rem;
+					text-decoration: none;
+					font-family: var(--monospace-font);
+					text-align: center;
+					font-weight: 100;
+				}
+
+
+				a {
+					padding-inline: 1.2rem;
+					padding-block: 1.5rem;
+					scale: 110%;
+					white-space: nowrap;
+				}
+			}
+		}
+	
+
+
+@media screen and (min-width: 1400px) {
+	main {
+		h1 {
+			font-size: 5rem;
+			line-height: 0.9;
+		}
+
+		.content {
+			margin-inline-start: -2rem;
+			margin-block-start: 8rem;
+		}
+	}
+}
