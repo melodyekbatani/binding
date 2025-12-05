@@ -24,7 +24,7 @@ header.homepage {
 		opacity: 0.5;
 		object-fit: contain;
 		transform: rotate(180deg);
-		/* my image kept streching, here's the fix I found https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit */
+		/* my image kept stretching, here's the fix I found https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit */
 	}
 
 	.title {
@@ -78,6 +78,7 @@ h2 {
 	p {
 		margin-inline-start: 0rem;
 		margin-block-start: -1rem;
+		text-wrap: pretty;
 	}
 }
 
@@ -186,8 +187,6 @@ h2 {
 			margin: 0;
 			margin-block-end: 1rem;
 
-
-
 			.title {
 				text-align: left;
 				margin-inline-start: 1rem;
@@ -275,7 +274,6 @@ h2 {
 	}
 
 	.homepage-menu {
-
 		li {
 			.title {
 				font-size: 1.3rem;
