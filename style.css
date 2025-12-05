@@ -34,7 +34,7 @@ header.homepage {
 		transform: translate(-50%, -50%);
 		width: 100%;
 		z-index: 10;
-		padding: 0 20px;
+		padding: 0 1.25rem;
 	}
 
 	.title h1 {
@@ -149,6 +149,7 @@ h2 {
 			width: 100%;
 			scale: 120%;
 			max-width: 500px;
+			/* I originally tried using percentages for these max widths but I wasn't able to control the image size as well as when I tried using px */
 			height: auto;
 			object-fit: contain;
 		}
@@ -180,6 +181,7 @@ h2 {
 		/* My grid here was showing up as different sizes, I used align-items: stretch to solve this https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/align-items */
 		padding-inline: 1rem;
 		box-sizing: border-box;
+		/* I was having alot of trouble figuring out how to get my image to be directly center on the screen and the right size different breakpoints. Using box sizing includes the padding and border in the total width and height. I originally saw it in a youtube video but there's also more information on box-sizing:border-box here: https://www.w3schools.com/css/css3_box-sizing.asp */
 		gap: 1rem;
 
 		li {
