@@ -113,15 +113,15 @@ h2 {
 		}
 
 		&.row1 {
-			border: 2px #FFB781 solid;
+			border: 3px #FFB781 solid;
 		}
 
 		&.row2 {
-			border: 2px #FF9446 solid;
+			border: 3px #FF9446 solid;
 		}
 
 		&.row3 {
-			border: 2px #E76200 solid;
+			border: 3px #E76200 solid;
 		}
 
 		.title {
