@@ -175,7 +175,7 @@ h2 {
 	}
 	.colophon {
 		p{
-		margin-block-start: 0rem;
+		margin-block-start: -1rem;
 		}
 	}
 
@@ -189,6 +189,7 @@ h2 {
 		box-sizing: border-box;
 		/* I was having alot of trouble figuring out how to get my image to be directly center on the screen and the right size different breakpoints. Using box sizing includes the padding and border in the total width and height. I originally saw it in a youtube video but there's also more information on box-sizing:border-box here: https://www.w3schools.com/css/css3_box-sizing.asp */
 		gap: 1rem;
+		margin-block: 3rem;
 
 		li {
 			padding-block-start: 0;
@@ -211,6 +212,7 @@ h2 {
 				font-size: 0.9rem;
 				margin-inline-end: 0rem;
 				margin-inline-start: 0rem;
+				margin-block: 0rem;
 			}
 		}
 
