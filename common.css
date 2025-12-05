@@ -166,9 +166,6 @@ nav:has(#menu-toggle-button:checked) .hamburger span:nth-child(3) {
 	}
 }
 
-
-/* Header */
-
 header {
 	display: flex;
 	flex-direction: row;

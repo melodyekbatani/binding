@@ -27,7 +27,7 @@ h1 {
 	color: #FF8933;
 	overflow-wrap: normal;
 	display: flex;
-  	flex-wrap: wrap;
+	flex-wrap: wrap;
 	line-height: 110%;
 	padding-block-end: 2rem;
 	letter-spacing: 0.3rem;
@@ -36,72 +36,83 @@ h1 {
 		/* allowing a slight rotation to work on inline caracters since the letters in this are not blocks */
 		display: inline-block;
 	}
-	.word { 
+
+	.word {
 		white-space: nowrap;
 	}
 
 	span:nth-child(4n) {
-	position: relative;
-	transform: rotate(1deg);
+		position: relative;
+		transform: rotate(1deg);
 	}
 
 	span:nth-child(4n + 1) {
-	position: relative;
-	transform: rotate(2deg);
+		position: relative;
+		transform: rotate(2deg);
 	}
 
 	span:nth-child(4n + 2) {
-	position: relative;
-	transform: rotate(3deg);
+		position: relative;
+		transform: rotate(3deg);
 	}
 
 	span:nth-child(4n + 3) {
-	position: relative;
-	transform: rotate(15deg);
-	}
-	.group2-desktop {
-	display: flex; 
-	gap: 20px; 
-	flex-basis: 100%;  /* my tutor reccomended this to make sure of sand is on the same line on desktop  */
-	}
-}
-@media screen and (min-width: 340px) and (max-width: 759px){
-	h1 { 
-			gap: 10px;
+		position: relative;
+		transform: rotate(15deg);
 	}
 
-	.group1-desktop { 
-	display: flex;
-	gap: 20px;
-	flex-basis: 100%; 
-	}
 	.group2-desktop {
-	display: flex; 
-	gap: 20px; 
-	flex-basis: 100%;  /* my tutor reccomended this to make sure of sand is on the same line on desktop  */
+		display: flex;
+		gap: 20px;
+		flex-basis: 100%;
+		/* my tutor reccomended this to make sure of sand is on the same line on desktop  */
 	}
 }
+
+@media screen and (min-width: 340px) and (max-width: 759px) {
+	h1 {
+		gap: 10px;
+	}
+
+	.group1-desktop {
+		display: flex;
+		gap: 20px;
+		flex-basis: 100%;
+	}
+
+	.group2-desktop {
+		display: flex;
+		gap: 20px;
+		flex-basis: 100%;
+		/* my tutor reccomended this to make sure of sand is on the same line on desktop  */
+	}
+}
+
 @media screen and (min-width: 760px) {
-	h1 { 
-			gap: 10px;
-			letter-spacing: 1rem;
-	}
-		.group1-desktop, .group2-desktop {
-		letter-spacing: 0.4rem;
+	h1 {
+		gap: 10px;
 	}
 
-	.group1-desktop { 
-	display: flex;
-	gap: 20px;
-	flex-basis: 100%; 
-	}
+	.group1-desktop,
 	.group2-desktop {
-	display: flex; 
-	gap: 20px; 
-	flex-basis: 100%;  /* my tutor reccomended this to make sure of sand is on the same line on desktop  */
+		letter-spacing: 0.1rem;
 	}
-	
+
+	.group1-desktop {
+		display: flex;
+		gap: 20px;
+		flex-basis: 100%;
+	}
+
+	.group2-desktop {
+		display: flex;
+		gap: 20px;
+		flex-basis: 100%;
+		/* my tutor reccomended this to make sure of sand is on the same line on desktop  */
+	}
+
 }
+
 @media screen and (min-width: 1400px) {
 	header {
 		padding-inline-end: 27rem;
@@ -110,44 +121,42 @@ h1 {
 	h2 {
 		margin-inline-start: 1rem;
 	}
-	h1 { 
-	.word-group-desktop {
-    display: flex;
-  	gap: 20px;
-  	flex-basis: 100%;  /* my tutor reccomended this to make sure of sand is on the same line on desktop  */
-	}
 
-	.menu {
-		flex-direction: row;
-		flex: 1;
-		height: auto;
-		background-color: #FF8933;
+	h1 {
+		.word-group-desktop {
+			display: flex;
+			gap: 20px;
+			flex-basis: 100%;
+			/* my tutor reccomended this to make sure of sand is on the same line on desktop  */
+		}
 
-
-
-		li {
+		.menu {
+			flex-direction: row;
+			flex: 1;
+			height: auto;
 			background-color: #FF8933;
-			border-block-end: 2px #ffffff solid;
 
-			a {
-				color: rgb(0, 0, 0);
-			}
 
-			&.active {
-				border-block-end: 1;
-				background-color: white;
-				filter: saturate(100%);
-				color: rgb(0, 0, 0);
+
+			li {
+				background-color: #FF8933;
+				border-block-end: 2px #ffffff solid;
 
 				a {
-					color: black;
+					color: rgb(0, 0, 0);
+				}
+
+				&.active {
+					border-block-end: 1;
+					background-color: white;
+					filter: saturate(100%);
+					color: rgb(0, 0, 0);
 				}
 			}
 		}
-	}
 
-	main {
-		display: grid;
+		main {
+			display: grid;
+		}
 	}
-}
 }

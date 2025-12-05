@@ -3,194 +3,181 @@
 	overflow-x: hidden;
 }
 
-main {
+/* I needed to add very specific selectors here. My website kept picking up code from common.css which didn't let me center the image */
+header.homepage {
 	position: relative;
+	width: 100%;
+	margin-block-start: 3rem;
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-
-img {
-	width: 80%;
+	justify-content: center;
 	align-items: center;
-	margin-block-start: -2rem;
-}
+	text-align: center;
+	padding: 1rem;
+	margin-inline-start: 0rem;
 
-header {
-	position: absolute;
-	top: 50%;
-	left: 50%;
+	img {
+		position: relative;
+		width: 76%;
+		max-height: 60vh;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+		opacity: 0.5;
+		object-fit: contain;
+		/* my image kept streching, here's the fix I found https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit */
+	}
+
+	.title {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		z-index: 10;
+		padding: 0 20px;
+	}
+
+	.title h1 {
+		font-weight: 600;
+		text-align: center;
+		padding: 0;
+		max-width: 12ch;
+		margin: 0 auto;
+		color: #E76200;
+		line-height: 1;
+	}
 }
 
 h2 {
-	color: #424242;
-	font-size: 1.3rem;
-	padding-inline: 1.5rem;
-	padding-block: 1rem;
-	border-block: 0px;
-}
-
-blockquote {
-	background: #FFB781;
-	background: radial-gradient(circle, rgb(255, 222, 198) 70%, rgb(255, 249, 249) 100%);
-	filter: drop-shadow(3px 3px 5px #d4d1d1);
-	color: #424242;
-	border-radius: 0.25rem;
-	border-block-start: 6px #FFE2C4 solid;
-}
-
-h1 {
-	z-index: 100;
-	font-size: 3rem;
-	line-height: 90%;
+	font-weight: 600;
 	text-align: left;
-	background-image: linear-gradient(to right, #f9cc9c, #E76200);
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
-	-webkit-text-fill-color: transparent;
+	padding: 0;
 	margin-block-start: 2rem;
+	max-width: 12ch;
+	margin-inline-start: 2rem;
+	color: #6d6d6d;
+	line-height: 1;
+}
+
+.colophon {
+	p {
+		margin-inline-start: 1rem;
+		margin-block-start: -1rem;
+	}
 }
 
 .homepage-menu {
 	padding-block-start: 2rem;
-	
-li {
-			display: flex;
-			flex-direction: column;
-			gap: 0.25rem;
-			margin: 0;
-			padding: 0;
-			text-align: center;
-			border-block-end: 2px #ffffff solid;
-			font-family: var(--monospace-font);
-			overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width:100%;
 
-			a {
-				padding-block: 2rem 1.5rem;
-				text-decoration: none;
-				color: black;
-			}
-
-			&.row1 {
-				background-color: #FFB781;
-			}
-
-			&.row2 {
-				background-color: #FF9446;
-			}
-
-			&.row3 {
-				background-color: #E76200;
-			}
-
-			.title {
-				font-size: 1.3rem;
-				text-transform: uppercase;
-				text-align: center;
-			}
-
-			.author-date {
-				font-size: 0.9rem;
-				font-family: var(--monospace-font);
-				text-align: center;
-				font-weight: 100;
-			}
-			}
-		}
-
-@media screen and (min-width: 768px) {
-	img {
-		margin-block-start: -2rem;
-		width: 50%;
-	}
-
-	header {
-		h1 {
-			margin-block-start: -25rem;
-			font-size: 9rem;
-			max-width: 10ch;
-			text-align: center;
-		}
-	}
-
-	h2 {
-		color: #424242;
-		font-size: 2rem;
-		padding-inline: 1.5rem;
+	li {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+		margin: 0;
+		padding: 1rem;
 		text-align: center;
-		margin-block-start: 0rem;
-		overflow: visible;
-	}
+		border-block-end: 2px #ffffff solid;
+		font-family: var(--monospace-font);
+		padding-block: 3rem;
 
-	main {
-		.content {
-			flex-direction: column;
-			gap: 0rem;
-			padding-inline: 1rem;
-			padding-block: -1rem;
-			margin-block-start: 6rem;
-			width: 90%;
+		a {
+			padding-block: 0;
+			margin: 0;
+			text-decoration: underline;
+			color: black;
+		}
+
+		&.row1 {
+			background-color: #FFB781;
+		}
+
+		&.row2 {
+			background-color: #FF9446;
+		}
+
+		&.row3 {
+			background-color: #E76200;
+		}
+
+		.title {
+			font-size: 1.7rem;
+			text-transform: uppercase;
+			text-align: center;
+		}
+
+		.author-date {
+			font-size: 0.9rem;
+			font-family: var(--monospace-font);
+			text-align: center;
+			font-weight: 100;
 		}
 	}
 }
-	.homepage-menu {
+
+@media screen and (min-width: 768px) {
+
+	header.homepage {
+		img {
 			width: 100%;
-			display: flex;
-			flex: 1;
+			scale: 120%;
+			max-width: 500px;
 			height: auto;
-			color: black;
-			flex-direction: row;
-			align-items: center;
-			margin-block-start: 0rem;
+			object-fit: contain;
+		}
+
+		.title {
+			h1 {
+				font-size: 5rem;
+			}
+
+			h2 {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.homepage-menu {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
 
 		li {
-			&.row1 {
-				Border-inline-start: none;
-			}
-
-				flex: 1;
-				border-inline-start: 12px rgb(255, 255, 255) double;
-				text-align: start;
-				color: black;
-
-
-				.title {
-					font-size: 0.9rem;
-					text-transform: uppercase;
-					text-align: center;
-				}
-
-				.author-date {
-					font-size: 0.6rem;
-					text-decoration: none;
-					font-family: var(--monospace-font);
-					text-align: center;
-					font-weight: 100;
-				}
-
-
-				a {
-					padding-inline: 1.2rem;
-					padding-block: 1.5rem;
-					scale: 110%;
-					white-space: nowrap;
-				}
-			}
+			flex: 1;
 		}
-	
-
+		p {
+			text-align: left;
+		}
+	}
+}
 
 @media screen and (min-width: 1400px) {
-	main {
-		h1 {
-			font-size: 5rem;
-			line-height: 0.9;
+
+	header.homepage {
+		align-content: center;
+		margin-block-start: 1.5rem;
+
+
+		img {
+			width: 100%;
+			scale: 100%;
+			max-width: 1000px;
+			height: auto;
 		}
 
-		.content {
-			margin-inline-start: -2rem;
-			margin-block-start: 8rem;
+		.title {
+			h1 {
+				font-weight: 600;
+				font-size: 4rem;
+			}
+
+			h2 {
+				font-size: 1rem;
+			}
 		}
 	}
 }
