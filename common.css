@@ -326,6 +326,8 @@ footer {
 		gap: 0.4rem;
 		align-items: baseline;
 		justify-content: space-between;
+		font-variant-emoji: text;
+		/* My arrow was showing up as an emoji on iphone, hopefully this fixes it for the most part https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-variant-emoji */
 	}
 
 	p {
@@ -334,6 +336,7 @@ footer {
 		color: black;
 		font-size: 1rem;
 		text-align: left;
+		font-variant-emoji: text;
 	}
 
 	a {
