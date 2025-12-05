@@ -48,30 +48,30 @@ header.homepage {
 	}
 
 	.title h2 {
-		font-weight: 600;
-		text-align: center;
 		padding: 0;
-		max-width: 100%;
-		font-size: 1.5rem;
 		margin: 0 auto;
 		margin-block-start: 1rem;
+		font-weight: 600;
+		text-align: center;
+		max-width: 100%;
+		font-size: 1.5rem;
 		color: #747474;
 		line-height: 1;
 	}
 }
 
 h2 {
-	position: relative;
-	border: none;
 	margin-block-end: 1rem;
-	font-weight: 600;
-	text-align: left;
 	padding: 0;
 	margin-block-start: 2rem;
-	max-width: 12ch;
 	margin-inline-start: 1rem;
-	color: #6d6d6d;
 	line-height: 1;
+	position: relative;
+	border: none;
+	font-weight: 600;
+	text-align: left;
+	max-width: 12ch;
+	color: #6d6d6d;
 }
 
 .colophon {
@@ -79,6 +79,7 @@ h2 {
 		margin-inline-start: 0rem;
 		margin-block-start: -1rem;
 		text-wrap: pretty;
+	/* I know this isn't a overarching solve for all browsers. I did also try some other ragging techniques like text-wrap: balance, but I found it was doing wierd things for longer paragraphs. */
 	}
 }
 

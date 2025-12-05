@@ -1,79 +1,77 @@
-	h2 {
-		background-color: #FFB781;
-		background-color: white;
-		justify-content: center;
-		color: #424242;
-		padding-top: 25px;
-		border-block-end: 6px #FFB781 solid;
-	}
+h2 {
+	background-color: #FFB781;
+	background-color: white;
+	justify-content: center;
+	color: #424242;
+	padding-top: 25px;
+	border-block-end: 6px #FFB781 solid;
+}
+blockquote {
+	background: #FFB781;
+	/* Learnt this from mdn https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/radial-gradient */
+	background: radial-gradient(circle, rgb(255, 222, 198) 70%, rgb(255, 249, 249) 100%);
+	filter: drop-shadow(3px 3px 5px #d4d1d1);
+	color: #424242;
+	border-radius: 0.25rem;
+	border-block-start: 6px #FF9446 solid;
+}
 
-	blockquote {
-		background: #FFB781;
-		/* Learnt this from mdn https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/radial-gradient */
-		background: radial-gradient(circle, rgb(255, 222, 198) 70%, rgb(255, 249, 249) 100%);
-		filter: drop-shadow(3px 3px 5px #d4d1d1);
-		color: #424242;
-		border-radius: 0.25rem;
-		border-block-start: 6px #FF9446 solid;
-	}
+h1 {
+	color: #FFB076;
+}
 
-	h1 {
-		color: #FFB076;
-	}
+sup {
+	color: #FFB076;
+}
 
-	sup {
-		color: #FFB076;
-	}
-	header {
-		.author-date {
-	margin-block-start: 2rem;
+header {
+	.author-date {
+		margin-block-start: 2rem;
 	}
 }
-	
 
-	@media screen and (min-width: 768px) {
-	}
 
-	@media screen and (min-width: 1400px) {
-		header {
+
+@media screen and (min-width: 1400px) {
+	header {
 			padding-inline-end: 27rem;
 		}
-
+	
 		h2 {
 			margin-inline-start: 1rem;
 		}
-
+	
 		.menu {
 			flex-direction: row;
 			flex: 1;
 			height: auto;
 			background-color: #FFB076;
-
-		li {
+	
+			li {
 				background-color: #FFB076;
 				border-block-end: 2px #ffffff solid;
-
+	
 				a {
 					color: rgb(0, 0, 0);
 				}
-
+	
 				&.active {
 					border-block-end: 1;
 					background-color: white;
 					filter: saturate(100%);
 					color: rgb(0, 0, 0);
-
+	
 					a {
 						color: black;
 					}
 				}
 			}
 		}
-
+	
 		main {
 			display: grid;
 		}
-
+	
 		.footer-title {
 			padding-inline-start: 0rem;
 			text-align: left;

@@ -65,7 +65,7 @@ h1 {
 		display: flex;
 		gap: 20px;
 		flex-basis: 100%;
-		/* my tutor reccomended this to make sure of sand is on the same line on desktop  */
+		/* my tutor recomended this to make sure of 'sand is' on the same line on desktop  */
 	}
 }
 
@@ -84,7 +84,6 @@ h1 {
 		display: flex;
 		gap: 20px;
 		flex-basis: 100%;
-		/* my tutor reccomended this to make sure of sand is on the same line on desktop  */
 	}
 }
 
@@ -108,7 +107,6 @@ h1 {
 		display: flex;
 		gap: 20px;
 		flex-basis: 100%;
-		/* my tutor reccomended this to make sure of sand is on the same line on desktop  */
 	}
 
 }
@@ -127,7 +125,6 @@ h1 {
 			display: flex;
 			gap: 20px;
 			flex-basis: 100%;
-			/* my tutor reccomended this to make sure of sand is on the same line on desktop  */
 		}
 
 		.menu {
@@ -135,8 +132,6 @@ h1 {
 			flex: 1;
 			height: auto;
 			background-color: #FF8933;
-
-
 
 			li {
 				background-color: #FF8933;
