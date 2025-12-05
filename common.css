@@ -69,6 +69,7 @@ nav {
 			width: 24px;
 			height: 18px;
 			z-index: 100;
+			/* Soko and Lucy helped me find a better way to show this on mobile. originally O had a white band across the top with some text that wasn't looking great and I was able to bounce ideas of off them to come up with the final design of my mobile nav */
 
 			span {
 				display: block;
@@ -349,9 +350,8 @@ footer {
 		vertical-align: super;
 	}
 }
-
-/* for middle media queury - ipad */
 @media screen and (min-width: 768px) {
+	/* I thought the middle breakpoints should have the same nav as desktop */
 	nav {
 		flex-direction: row;
 		align-items: center;
